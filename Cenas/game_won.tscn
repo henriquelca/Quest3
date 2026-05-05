@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cl8h1m3g08nvh"]
+
+[ext_resource type="Script" uid="uid://cbtf51mfcb57n" path="res://Cenas/game_over.gd" id="1_163lr"]
+[ext_resource type="FontFile" uid="uid://dm3ch1vmt4ixr" path="res://Fonts/font.ttf" id="2_y2qpn"]
+
+[node name="GameOver" type="CanvasLayer" unique_id=23481474]
+script = ExtResource("1_163lr")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1158098623]
+color = Color(0, 0, 0, 0.8)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1906091839]
+offset_left = 424.0
+offset_top = 200.0
+offset_right = 716.0
+offset_bottom = 418.0
+alignment = 1
+
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=280855838]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_y2qpn")
+theme_override_font_sizes/font_size = 40
+text = "GAME WON!!!"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="MenuButton" type="Button" parent="VBoxContainer" unique_id=1261810963]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "MAIN MENU"
+
+[connection signal="pressed" from="VBoxContainer/MenuButton" to="." method="_on_menu_pressed"]

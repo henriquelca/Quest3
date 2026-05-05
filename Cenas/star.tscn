@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b2ejb5kc8fkcw"]
+
+[ext_resource type="Texture2D" uid="uid://cvcmfxl6ese34" path="res://Sprites/Starman.png" id="1_o5t73"]
+[ext_resource type="Script" uid="uid://ywkotnbfwq18" path="res://Cenas/star.gd" id="1_xwdek"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1xwdek"]
+radius = 12.0
+
+[node name="Star" type="Area2D" unique_id=1018952607]
+script = ExtResource("1_xwdek")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=354936854]
+scale = Vector2(2, 2)
+texture = ExtResource("1_o5t73")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1766369390]
+shape = SubResource("CircleShape2D_1xwdek")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1460491353]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

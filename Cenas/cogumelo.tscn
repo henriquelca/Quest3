@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c7cmtwd5g7tql"]
+
+[ext_resource type="Script" uid="uid://cdobae08s8ijb" path="res://cogumelo.gd" id="1_xr4mc"]
+[ext_resource type="Texture2D" uid="uid://80dij0rowpdx" path="res://Sprites/MagicMushroom.png" id="2_xhvdr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rhkxc"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l4vj1"]
+size = Vector2(18, 18)
+
+[node name="Cogumelo" type="CharacterBody2D" unique_id=60274598]
+collision_mask = 2
+script = ExtResource("1_xr4mc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2029619486]
+texture = ExtResource("2_xhvdr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=639986820]
+shape = SubResource("RectangleShape2D_rhkxc")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1539840908]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1513246473]
+shape = SubResource("RectangleShape2D_l4vj1")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

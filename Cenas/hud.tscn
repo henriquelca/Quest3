@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://vf3ky3xlsjxq"]
+
+[ext_resource type="Script" uid="uid://bnb3so2uhcj23" path="res://Cenas/hud.gd" id="1_8slac"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1530401561]
+layer = 100
+script = ExtResource("1_8slac")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1643762778]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 100.0
+offset_bottom = 80.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1049187451]
+layout_mode = 2
+text = "LIVES:"
+
+[node name="LivesLabel" type="Label" parent="VBoxContainer" unique_id=1518016257]
+layout_mode = 2
+text = "3"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=406344411]
+offset_left = 1019.0
+offset_top = 9.0
+offset_right = 1146.0
+offset_bottom = 113.0
+
+[node name="Label_Timer" type="Label" parent="VBoxContainer2" unique_id=632579604]
+layout_mode = 2
+text = "Timer:"
+
+[node name="Game_Timer" type="Timer" parent="." unique_id=791250063]

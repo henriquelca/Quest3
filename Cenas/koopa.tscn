@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://uni6wnro6x2q"]
+
+[ext_resource type="Texture2D" uid="uid://d0n6srd2hrk0i" path="res://Sprites/Koopa_Shell.png" id="1_pr4ha"]
+[ext_resource type="Script" uid="uid://c36vw3i4f7xo4" path="res://Cenas/koopa.gd" id="1_xcbc3"]
+[ext_resource type="Texture2D" uid="uid://rq2r08kewwlo" path="res://Sprites/Koopa_Walk1.png" id="2_xcbc3"]
+[ext_resource type="Texture2D" uid="uid://b2q1ddi7o0ef" path="res://Sprites/Koopa_Walk2.png" id="3_amv0p"]
+[ext_resource type="Shape2D" uid="uid://dj3yxk5qf5tiq" path="res://Resources/CollisionShapes/koopa_full.tres" id="5_amv0p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fkhfp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pr4ha")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xcbc3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_amv0p")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Koopa" type="Area2D" unique_id=1580025160]
+collision_layer = 4
+collision_mask = 9
+script = ExtResource("1_xcbc3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1694641636]
+sprite_frames = SubResource("SpriteFrames_fkhfp")
+animation = &"walk"
+autoplay = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=709403001]
+position = Vector2(0, 0.5)
+shape = ExtResource("5_amv0p")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1974895037]
+target_position = Vector2(0, 12)
+collision_mask = 18
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=879039156]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

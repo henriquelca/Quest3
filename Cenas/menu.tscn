@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvdqxvmh26y7"]
+
+[ext_resource type="Script" path="res://Cenas/menu.gd" id="1_nqmcy"]
+
+[node name="Menu" type="CanvasLayer"]
+script = ExtResource("1_nqmcy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_fill_parent = true
+color = Color(0.1, 0.1, 0.1, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_fill_parent = true
+alignment = 1
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+text = "SUPER MARIO BROS"
+text_overrun_behavior = 3
+add_child_suffix = "enabled"
+
+[node name="Spacer1" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+
+[node name="PlayButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+text = "START GAME"
+add_child_suffix = "enabled"
+
+[node name="Spacer2" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+text = "QUIT"
+add_child_suffix = "enabled"
+
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_pressed"]

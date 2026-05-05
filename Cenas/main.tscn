@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://71wdokojahpi"]
+
+[ext_resource type="Script" uid="uid://bappeepikmd7o" path="res://Cenas/menu.gd" id="1_nqmcy"]
+[ext_resource type="FontFile" uid="uid://dm3ch1vmt4ixr" path="res://Fonts/font.ttf" id="2_74bqr"]
+
+[node name="Menu" type="CanvasLayer" unique_id=223411393]
+script = ExtResource("1_nqmcy")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=873519347]
+color = Color(0.1, 0.1, 0.1, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1097211888]
+offset_left = 388.0
+offset_top = 199.0
+offset_right = 790.0
+offset_bottom = 515.0
+alignment = 1
+
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=1394915597]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_74bqr")
+theme_override_font_sizes/font_size = 40
+text = "SUPER MARIO BROS"
+horizontal_alignment = 1
+text_overrun_behavior = 3
+
+[node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=53522478]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "START GAME"
+
+[node name="Spacer2" type="Control" parent="VBoxContainer" unique_id=1050778805]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1525454546]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_pressed"]
