@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://71wdokojahpi"]
 
 [ext_resource type="Script" uid="uid://bappeepikmd7o" path="res://Cenas/menu.gd" id="1_nqmcy"]
+[ext_resource type="Texture2D" uid="uid://b5qhhmhwh2jrv" path="res://Sprites/Nova pasta/WhatsApp Image 2026-05-17 at 21.40.25.jpeg" id="2_ruij7"]
+[ext_resource type="FontFile" uid="uid://2b3tn4timf70" path="res://Sprites/Nova pasta/Minecraftia-Regular.ttf" id="3_lb8y5"]
 
 [node name="Menu" type="CanvasLayer" unique_id=223411393]
 script = ExtResource("1_nqmcy")
@@ -8,16 +10,22 @@ script = ExtResource("1_nqmcy")
 [node name="ColorRect" type="ColorRect" parent="." unique_id=873519347]
 color = Color(0.1, 0.1, 0.1, 1)
 
+[node name="Sprite2D" type="Sprite2D" parent="ColorRect" unique_id=131677631]
+position = Vector2(576.0001, 325.00006)
+scale = Vector2(0.8891892, 0.7892157)
+texture = ExtResource("2_ruij7")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1097211888]
-offset_left = 388.0
-offset_top = 199.0
-offset_right = 790.0
-offset_bottom = 515.0
+offset_left = 428.0
+offset_top = 137.0
+offset_right = 849.0
+offset_bottom = 544.0
 alignment = 1
 
 [node name="Title" type="Label" parent="VBoxContainer" unique_id=1394915597]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_lb8y5")
 theme_override_font_sizes/font_size = 40
 text = "DIA DE ESCOLA"
 horizontal_alignment = 1
@@ -26,6 +34,7 @@ text_overrun_behavior = 3
 [node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=53522478]
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_lb8y5")
 text = "START GAME"
 
 [node name="Spacer2" type="Control" parent="VBoxContainer" unique_id=1050778805]
@@ -35,6 +44,7 @@ layout_mode = 2
 [node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1525454546]
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_lb8y5")
 text = "QUIT"
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_pressed"]
