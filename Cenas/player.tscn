@@ -26,9 +26,29 @@ region = Rect2(1710, 985, 342, 985)
 atlas = ExtResource("22_wh05g")
 region = Rect2(2338, 985, 342, 985)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2c22q"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_phtmq"]
 atlas = ExtResource("20_t7cd8")
-region = Rect2(0, 0, 200, 483)
+region = Rect2(0, 0, 200, 484)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8vy8t"]
+atlas = ExtResource("20_t7cd8")
+region = Rect2(374, 0, 203, 484)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdv6k"]
+atlas = ExtResource("20_t7cd8")
+region = Rect2(719, 0, 213, 484)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jd21"]
+atlas = ExtResource("20_t7cd8")
+region = Rect2(1071, 0, 243, 484)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pxip4"]
+atlas = ExtResource("20_t7cd8")
+region = Rect2(1431, 0, 243, 484)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgucs"]
+atlas = ExtResource("20_t7cd8")
+region = Rect2(1802, 0, 200, 484)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jx05c"]
 atlas = ExtResource("22_wh05g")
@@ -78,7 +98,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2c22q")
+"texture": SubResource("AtlasTexture_phtmq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8vy8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdv6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jd21")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxip4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgucs")
 }],
 "loop": true,
 "name": &"small_jump",
@@ -113,10 +148,11 @@ collision_mask = 6
 script = ExtResource("1_iersn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=83832257]
-position = Vector2(4.1538167, 3.7184846)
-scale = Vector2(0.07846183, 0.05085513)
+position = Vector2(0, -1.4075363)
+scale = Vector2(0.036923666, 0.029629368)
 sprite_frames = SubResource("SpriteFrames_pmvhq")
 animation = &"small_jump"
+frame_progress = 0.7686836
 script = ExtResource("25_8v2xp")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1900403471]

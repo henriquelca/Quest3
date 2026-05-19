@@ -4,7 +4,9 @@ class_name Player
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 enum PlayerMode {
-	SMALL
+	SMALL,
+	BIG,
+	SHOOTING
 }
 
 signal points_scored(points: int)
@@ -150,4 +152,5 @@ func crescer():
 		animated_sprite_2d.position.y = -8
 		
 		await animated_sprite_2d.animation_finished
+		player_mode = PlayerMode.BIG
 		is_transforming = false
