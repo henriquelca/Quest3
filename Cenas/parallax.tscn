@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dphrfuiacr8lk"]
+
+[ext_resource type="Texture2D" uid="uid://5ocjj3upwok2" path="res://Sprites/Nova pasta/figura fundo.png" id="1_ypuw6"]
+
+[node name="Parallax2D" type="Parallax2D" unique_id=841984197]
+scroll_scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=56997042]
+position = Vector2(554, 289.58954)
+scale = Vector2(0.841995, 0.95419407)
+texture = ExtResource("1_ypuw6")
