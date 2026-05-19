@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://d3jwm15et3t22" path="res://Sprites/Mario_Small_Idle.png" id="1_ytnb3"]
 [ext_resource type="Texture2D" uid="uid://bausni6inywyv" path="res://Sprites/Mario_Small_Death.png" id="2_8vhvd"]
 [ext_resource type="Shape2D" uid="uid://dht7wx7eiwm17" path="res://Resources/CollisionShapes/small_mario.tres" id="2_pmvhq"]
-[ext_resource type="Texture2D" uid="uid://nncsvvula15w" path="res://Sprites/Nova pasta/figura 01.png" id="2_t7cd8"]
 [ext_resource type="Texture2D" uid="uid://ct8uqpacoxaq1" path="res://Sprites/Mario_Big_Idle.png" id="2_vlk8b"]
 [ext_resource type="Texture2D" uid="uid://c3njnoy5owfh3" path="res://Sprites/Mario_Big_Jump.png" id="3_had87"]
 [ext_resource type="Texture2D" uid="uid://crqgheu7ndoxs" path="res://Sprites/Mario_Big_Pole.png" id="4_axwfv"]
+[ext_resource type="Texture2D" uid="uid://bqfjqbv1vr2oq" path="res://Sprites/Mario_Small_Jump.png" id="4_e2nbm"]
 [ext_resource type="Texture2D" uid="uid://dvnr77h30cjn6" path="res://Sprites/Mario_Big_Run1.png" id="5_8tubf"]
 [ext_resource type="Texture2D" uid="uid://ckd7ka2h150dt" path="res://Sprites/Mario_Small_Pole.png" id="5_ybr15"]
 [ext_resource type="Texture2D" uid="uid://b7pkrn5h1n5lm" path="res://Sprites/Mario_Small_Run1.png" id="6_2enhl"]
@@ -25,90 +25,13 @@
 [ext_resource type="Texture2D" uid="uid://cipjmquw1tlrv" path="res://Sprites/Mario_Shooting_Run2.png" id="14_ka0he"]
 [ext_resource type="Texture2D" uid="uid://daqnle02fss6v" path="res://Sprites/Mario_Shooting_Run3.png" id="15_rxqvy"]
 [ext_resource type="Texture2D" uid="uid://1w6lqgnlyqo2" path="res://Sprites/Mario_Shooting-Slide.png" id="16_2umio"]
-[ext_resource type="Texture2D" uid="uid://b5tvj7dnd40jo" path="res://Sprites/Nova pasta/figura 04.png" id="20_t7cd8"]
 [ext_resource type="Script" uid="uid://dds40ncln0y3x" path="res://Cenas/animated_sprite_2d.gd" id="25_8v2xp"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sjhg2"]
-atlas = ExtResource("2_t7cd8")
-region = Rect2(0, 561, 238, 561)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jnm6q"]
-atlas = ExtResource("2_t7cd8")
-region = Rect2(302, 561, 230, 561)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ka0he"]
-atlas = ExtResource("2_t7cd8")
-region = Rect2(635, 561, 215, 561)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rxqvy"]
-atlas = ExtResource("2_t7cd8")
-region = Rect2(966, 561, 236, 561)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2umio"]
-atlas = ExtResource("2_t7cd8")
-region = Rect2(1337, 561, 201, 561)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_t7cd8"]
-atlas = ExtResource("2_t7cd8")
-region = Rect2(6, 561, 248, 561)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5sl0s"]
-atlas = ExtResource("2_t7cd8")
-region = Rect2(287, 561, 248, 561)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6bkmt"]
-atlas = ExtResource("2_t7cd8")
-region = Rect2(619, 561, 248, 561)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2ex7r"]
-atlas = ExtResource("2_t7cd8")
-region = Rect2(955, 561, 248, 561)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ylkck"]
-atlas = ExtResource("2_t7cd8")
-region = Rect2(1323, 561, 248, 561)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_phtmq"]
-atlas = ExtResource("20_t7cd8")
-region = Rect2(0, 0, 200, 484)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8vy8t"]
-atlas = ExtResource("20_t7cd8")
-region = Rect2(374, 0, 203, 484)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gdv6k"]
-atlas = ExtResource("20_t7cd8")
-region = Rect2(719, 0, 213, 484)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0jd21"]
-atlas = ExtResource("20_t7cd8")
-region = Rect2(1071, 0, 243, 484)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pxip4"]
-atlas = ExtResource("20_t7cd8")
-region = Rect2(1431, 0, 243, 484)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hgucs"]
-atlas = ExtResource("20_t7cd8")
-region = Rect2(1802, 0, 200, 484)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pmvhq"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_sjhg2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jnm6q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ka0he")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rxqvy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2umio")
+"texture": ExtResource("2_vlk8b")
 }],
 "loop": true,
 "name": &"big_idle",
@@ -245,19 +168,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_t7cd8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5sl0s")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6bkmt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2ex7r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ylkck")
+"texture": ExtResource("1_ytnb3")
 }],
 "loop": true,
 "name": &"small_idle",
@@ -265,22 +176,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_phtmq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8vy8t")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gdv6k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0jd21")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pxip4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hgucs")
+"texture": ExtResource("4_e2nbm")
 }],
 "loop": true,
 "name": &"small_jump",
@@ -380,20 +276,17 @@ collision_mask = 6
 script = ExtResource("1_iersn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=83832257]
-scale = Vector2(0.07142857, 0.053475935)
 sprite_frames = SubResource("SpriteFrames_pmvhq")
-animation = &"small_jump"
+animation = &"big_to_shooting"
 script = ExtResource("25_8v2xp")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1900403471]
 collision_mask = 6
 
 [node name="AreaCollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=426313531]
-position = Vector2(0, 5)
 shape = ExtResource("2_pmvhq")
 
 [node name="BodyCollisionShape2D" type="CollisionShape2D" parent="." unique_id=1699387193]
-position = Vector2(0, 5)
 shape = ExtResource("2_pmvhq")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1608615457]
