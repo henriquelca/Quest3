@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://71wdokojahpi"]
 
 [ext_resource type="Script" uid="uid://bappeepikmd7o" path="res://Cenas/menu.gd" id="1_nqmcy"]
-[ext_resource type="Texture2D" uid="uid://b8o6wyeawq745" path="res://Sprites/WhatsApp Image 2026-05-19 at 2.16.09 PM.jpeg" id="2_74bqr"]
+[ext_resource type="Texture2D" uid="uid://b8o6wyeawq745" path="res://Sprites/MenuBG.jpeg" id="2_74bqr"]
 
 [node name="Menu" type="CanvasLayer" unique_id=223411393]
 script = ExtResource("1_nqmcy")
@@ -9,19 +9,19 @@ script = ExtResource("1_nqmcy")
 [node name="ColorRect" type="ColorRect" parent="." unique_id=873519347]
 color = Color(0.1, 0.1, 0.1, 1)
 
-[node name="WhatsAppImage20260519At2_16_09Pm" type="Sprite2D" parent="." unique_id=2134199109]
+[node name="MenuBG" type="Sprite2D" parent="." unique_id=2134199109]
 position = Vector2(575.625, 325.25)
 scale = Vector2(0.8870656, 0.7935049)
 texture = ExtResource("2_74bqr")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="WhatsAppImage20260519At2_16_09Pm" unique_id=1097211888]
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuBG" unique_id=1097211888]
 offset_left = -211.51202
 offset_top = -159.10426
 offset_right = 190.48798
 offset_bottom = 156.89574
 alignment = 1
 
-[node name="Title" type="Label" parent="WhatsAppImage20260519At2_16_09Pm/VBoxContainer" unique_id=1394915597]
+[node name="Title" type="Label" parent="MenuBG/VBoxContainer" unique_id=1394915597]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -29,19 +29,19 @@ text = "DIA DE ESCOLA"
 horizontal_alignment = 1
 text_overrun_behavior = 3
 
-[node name="PlayButton" type="Button" parent="WhatsAppImage20260519At2_16_09Pm/VBoxContainer" unique_id=53522478]
+[node name="PlayButton" type="Button" parent="MenuBG/VBoxContainer" unique_id=53522478]
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 text = "START GAME"
 
-[node name="Spacer2" type="Control" parent="WhatsAppImage20260519At2_16_09Pm/VBoxContainer" unique_id=1050778805]
+[node name="Spacer2" type="Control" parent="MenuBG/VBoxContainer" unique_id=1050778805]
 custom_minimum_size = Vector2(0, 30)
 layout_mode = 2
 
-[node name="QuitButton" type="Button" parent="WhatsAppImage20260519At2_16_09Pm/VBoxContainer" unique_id=1525454546]
+[node name="QuitButton" type="Button" parent="MenuBG/VBoxContainer" unique_id=1525454546]
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 text = "QUIT"
 
-[connection signal="pressed" from="WhatsAppImage20260519At2_16_09Pm/VBoxContainer/PlayButton" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="WhatsAppImage20260519At2_16_09Pm/VBoxContainer/QuitButton" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="MenuBG/VBoxContainer/PlayButton" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MenuBG/VBoxContainer/QuitButton" to="." method="_on_quit_pressed"]
