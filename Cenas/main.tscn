@@ -1,12 +1,7 @@
 [gd_scene format=3 uid="uid://71wdokojahpi"]
 
 [ext_resource type="Script" uid="uid://bappeepikmd7o" path="res://Cenas/menu.gd" id="1_nqmcy"]
-<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://b8o6wyeawq745" path="res://Sprites/MenuBG.jpeg" id="2_74bqr"]
-=======
-[ext_resource type="Texture2D" uid="uid://b8o6wyeawq745" path="res://Sprites/WhatsApp Image 2026-05-19 at 2.16.09 PM.jpeg" id="2_74bqr"]
-[ext_resource type="FontFile" uid="uid://bmmnp6axecp4a" path="res://Fonts/Minecraftia-Regular.ttf" id="3_ruij7"]
->>>>>>> Stashed changes
 
 [node name="Menu" type="CanvasLayer" unique_id=223411393]
 script = ExtResource("1_nqmcy")
@@ -19,25 +14,16 @@ position = Vector2(575.625, 325.25)
 scale = Vector2(0.8870656, 0.7935049)
 texture = ExtResource("2_74bqr")
 
-<<<<<<< Updated upstream
 [node name="VBoxContainer" type="VBoxContainer" parent="MenuBG" unique_id=1097211888]
 offset_left = -211.51202
 offset_top = -159.10426
 offset_right = 190.48798
 offset_bottom = 156.89574
-=======
-[node name="VBoxContainer" type="VBoxContainer" parent="WhatsAppImage20260519At2_16_09Pm" unique_id=1097211888]
-offset_left = -160.78293
-offset_top = -137.68031
-offset_right = 241.21707
-offset_bottom = 178.31969
->>>>>>> Stashed changes
 alignment = 1
 
 [node name="Title" type="Label" parent="MenuBG/VBoxContainer" unique_id=1394915597]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_ruij7")
 theme_override_font_sizes/font_size = 40
 text = "DIA DE ESCOLA"
 horizontal_alignment = 1
@@ -46,7 +32,6 @@ text_overrun_behavior = 3
 [node name="PlayButton" type="Button" parent="MenuBG/VBoxContainer" unique_id=53522478]
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_ruij7")
 text = "START GAME"
 
 [node name="Spacer2" type="Control" parent="MenuBG/VBoxContainer" unique_id=1050778805]
@@ -56,7 +41,6 @@ layout_mode = 2
 [node name="QuitButton" type="Button" parent="MenuBG/VBoxContainer" unique_id=1525454546]
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_ruij7")
 text = "QUIT"
 
 [connection signal="pressed" from="MenuBG/VBoxContainer/PlayButton" to="." method="_on_play_pressed"]
