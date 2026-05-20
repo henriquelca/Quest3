@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7ivoeb051t4d"
-path="res://.godot/imported/01_andar.png-451dce69e2bad5d78f78b6570b4cde7f.ctex"
+uid="uid://bm8758o1fs60r"
+path="res://.godot/imported/parado_00.png-70658bd775c8afaca7b312e92a09e038.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/01_andar.png"
-dest_files=["res://.godot/imported/01_andar.png-451dce69e2bad5d78f78b6570b4cde7f.ctex"]
+source_file="res://Sprites/parado_00.png"
+dest_files=["res://.godot/imported/parado_00.png-70658bd775c8afaca7b312e92a09e038.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://klfimoi5iga4"
-path="res://.godot/imported/02_andar.png-09b3f96cc0ef6bc3869242dbbe1b98f2.ctex"
+uid="uid://c4f4x1a8828e"
+path="res://.godot/imported/andar6.png-ac8189d7a8e9c767bdf050c8b2d1faff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/02_andar.png"
-dest_files=["res://.godot/imported/02_andar.png-09b3f96cc0ef6bc3869242dbbe1b98f2.ctex"]
+source_file="res://Sprites/andar6.png"
+dest_files=["res://.godot/imported/andar6.png-ac8189d7a8e9c767bdf050c8b2d1faff.ctex"]
 
 [params]
 

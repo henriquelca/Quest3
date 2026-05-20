@@ -61,9 +61,9 @@ func _physics_process(delta):
 	var direction = Input.get_axis("left", "right")
 	
 	if direction:
-		velocity.x = lerp(velocity.x, speed * direction, run_speed_damping * delta)
+		velocity.x = speed * direction
 	else:
-		velocity.x = move_toward(velocity.x, 0, speed * delta)
+		velocity.x = 0
 		
 	animated_sprite_2d.trigger_animation(velocity, direction, player_mode)
 	move_and_slide()

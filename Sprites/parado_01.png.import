@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4xukj0q3ug2m"
-path="res://.godot/imported/02_pulo.png-bc29278188c6e6f60a0f8c0a7ac06cad.ctex"
+uid="uid://co257mrvgg30a"
+path="res://.godot/imported/parado_01.png-1174b1c65b205999adaf80ca3f8a98e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/02_pulo.png"
-dest_files=["res://.godot/imported/02_pulo.png-bc29278188c6e6f60a0f8c0a7ac06cad.ctex"]
+source_file="res://Sprites/parado_01.png"
+dest_files=["res://.godot/imported/parado_01.png-1174b1c65b205999adaf80ca3f8a98e6.ctex"]
 
 [params]
 

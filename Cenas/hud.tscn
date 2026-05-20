@@ -19,15 +19,3 @@ text = "LIVES:"
 [node name="LivesLabel" type="Label" parent="VBoxContainer" unique_id=1518016257]
 layout_mode = 2
 text = "3"
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=406344411]
-offset_left = 1019.0
-offset_top = 9.0
-offset_right = 1146.0
-offset_bottom = 113.0
-
-[node name="Label_Timer" type="Label" parent="VBoxContainer2" unique_id=632579604]
-layout_mode = 2
-text = "Timer:"
-
-[node name="Game_Timer" type="Timer" parent="." unique_id=791250063]
