@@ -22,11 +22,13 @@
 [ext_resource type="Texture2D" uid="uid://daqnle02fss6v" path="res://Sprites/Mario_Shooting_Run3.png" id="15_rxqvy"]
 [ext_resource type="Texture2D" uid="uid://1w6lqgnlyqo2" path="res://Sprites/Mario_Shooting-Slide.png" id="16_2umio"]
 [ext_resource type="Texture2D" uid="uid://bm8758o1fs60r" path="res://Sprites/parado_00.png" id="19_5sl0s"]
-[ext_resource type="Texture2D" uid="uid://co257mrvgg30a" path="res://Sprites/parado_01.png" id="20_6bkmt"]
-[ext_resource type="Texture2D" uid="uid://6eywm18tk041" path="res://Sprites/parado_02.png" id="21_2ex7r"]
-[ext_resource type="Texture2D" uid="uid://bs1114tsrnkya" path="res://Sprites/parado_03.png" id="22_ylkck"]
-[ext_resource type="Texture2D" uid="uid://c75ad3mpgmfiu" path="res://Sprites/parado_04.png" id="23_phtmq"]
+[ext_resource type="Texture2D" uid="uid://crfmeo4s0wu3" path="res://Sprites/parado_01.png" id="20_6bkmt"]
+[ext_resource type="Texture2D" uid="uid://cr280i0b0rliq" path="res://Sprites/parado_02.png" id="21_2ex7r"]
+[ext_resource type="Texture2D" uid="uid://cwhqutcbwrync" path="res://Sprites/parado_03.png" id="22_ylkck"]
+[ext_resource type="Texture2D" uid="uid://b01gai6spsg6m" path="res://Sprites/parado_04.png" id="23_phtmq"]
+[ext_resource type="Texture2D" uid="uid://d3tylac3pm1pn" path="res://Sprites/parado_05.png" id="24_2ex7r"]
 [ext_resource type="Script" uid="uid://dds40ncln0y3x" path="res://Cenas/animated_sprite_2d.gd" id="25_8v2xp"]
+[ext_resource type="Texture2D" uid="uid://dw2iivlqvvu2x" path="res://Sprites/parado_06.png" id="25_ylkck"]
 [ext_resource type="Texture2D" uid="uid://bjhyk5u07tqyi" path="res://Sprites/andar1.png" id="26_6bkmt"]
 [ext_resource type="Texture2D" uid="uid://dumanfwptxi1h" path="res://Sprites/andar2.png" id="27_2ex7r"]
 [ext_resource type="Texture2D" uid="uid://sc550kdkb5sn" path="res://Sprites/andar3.png" id="28_ylkck"]
@@ -197,6 +199,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("23_phtmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_2ex7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ylkck")
 }],
 "loop": true,
 "name": &"small_idle",

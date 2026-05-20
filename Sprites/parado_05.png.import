@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crfmeo4s0wu3"
-path="res://.godot/imported/parado_01.png-1174b1c65b205999adaf80ca3f8a98e6.ctex"
+uid="uid://d3tylac3pm1pn"
+path="res://.godot/imported/parado_05.png-8ef4804ca052e123c36e90c066835b13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/parado_01.png"
-dest_files=["res://.godot/imported/parado_01.png-1174b1c65b205999adaf80ca3f8a98e6.ctex"]
+source_file="res://Sprites/parado_05.png"
+dest_files=["res://.godot/imported/parado_05.png-8ef4804ca052e123c36e90c066835b13.ctex"]
 
 [params]
 
