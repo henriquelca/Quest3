@@ -29,21 +29,17 @@
 [ext_resource type="Texture2D" uid="uid://d3tylac3pm1pn" path="res://Sprites/parado_05.png" id="24_2ex7r"]
 [ext_resource type="Script" uid="uid://dds40ncln0y3x" path="res://Cenas/animated_sprite_2d.gd" id="25_8v2xp"]
 [ext_resource type="Texture2D" uid="uid://dw2iivlqvvu2x" path="res://Sprites/parado_06.png" id="25_ylkck"]
+[ext_resource type="Texture2D" uid="uid://bsv74pmqq5nmo" path="res://Sprites/pulando_01.png" id="26_0jd21"]
 [ext_resource type="Texture2D" uid="uid://bjhyk5u07tqyi" path="res://Sprites/andar1.png" id="26_6bkmt"]
 [ext_resource type="Texture2D" uid="uid://dumanfwptxi1h" path="res://Sprites/andar2.png" id="27_2ex7r"]
+[ext_resource type="Texture2D" uid="uid://cndx5d3cxbq7b" path="res://Sprites/pulando_02.png" id="27_pxip4"]
+[ext_resource type="Texture2D" uid="uid://trslp46yfoi5" path="res://Sprites/pulando_03.png" id="28_hgucs"]
 [ext_resource type="Texture2D" uid="uid://sc550kdkb5sn" path="res://Sprites/andar3.png" id="28_ylkck"]
+[ext_resource type="Texture2D" uid="uid://dayrl3ri8kxg0" path="res://Sprites/pulando_04.png" id="29_157go"]
 [ext_resource type="Texture2D" uid="uid://2s07g535isgo" path="res://Sprites/andar4.png" id="29_phtmq"]
 [ext_resource type="Texture2D" uid="uid://x5nd6gcn22ii" path="res://Sprites/andar5.png" id="30_8vy8t"]
+[ext_resource type="Texture2D" uid="uid://b4pysv3aflmvk" path="res://Sprites/pulando_05.png" id="30_72r0d"]
 [ext_resource type="Texture2D" uid="uid://c4f4x1a8828e" path="res://Sprites/andar6.png" id="31_gdv6k"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8vy8t"]
-load_path = "res://.godot/imported/01_pulo.png-282ca2f17597e31dce575b2a4e77c094.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gdv6k"]
-load_path = "res://.godot/imported/02_pulo.png-bc29278188c6e6f60a0f8c0a7ac06cad.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0jd21"]
-load_path = "res://.godot/imported/03_pulo.png-bfe6ceb57109fa9062d6944d5132382c.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pmvhq"]
 animations = [{
@@ -212,13 +208,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_8vy8t")
+"texture": ExtResource("26_0jd21")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_gdv6k")
+"texture": ExtResource("27_pxip4")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_0jd21")
+"texture": ExtResource("28_hgucs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_157go")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_72r0d")
 }],
 "loop": true,
 "name": &"small_jump",
@@ -329,7 +331,7 @@ script = ExtResource("1_iersn")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=83832257]
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_pmvhq")
-animation = &"small_idle"
+animation = &"small_jump"
 script = ExtResource("25_8v2xp")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1900403471]
