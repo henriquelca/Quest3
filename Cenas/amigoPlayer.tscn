@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://c2vljgj4bwwkb"]
+
+[ext_resource type="Script" uid="uid://wnkvrdpvvqgo" path="res://Cenas/goomba.gd" id="1_r2i80"]
+[ext_resource type="Texture2D" uid="uid://dl0kuv8e1o6n3" path="res://Sprites/Goomba_Flat.png" id="2_goi58"]
+[ext_resource type="Texture2D" uid="uid://cgghe4tv2u6dy" path="res://Sprites/amigo_player01.png" id="3_r2i80"]
+[ext_resource type="Texture2D" uid="uid://rcayjimdpbur" path="res://Sprites/amigo_player02.png" id="4_goi58"]
+[ext_resource type="Texture2D" uid="uid://dy12c6qy4lfsl" path="res://Sprites/amigo_player03.png" id="5_mcbu2"]
+[ext_resource type="Texture2D" uid="uid://dwdyawkxs5wk0" path="res://Sprites/amigo_player4.png" id="6_3ncl3"]
+[ext_resource type="Texture2D" uid="uid://cfngmmfglkev7" path="res://Sprites/amigo_player05.png" id="7_m7uuo"]
+[ext_resource type="Texture2D" uid="uid://whsqorh47ybb" path="res://Sprites/amigo_player06.png" id="8_a0e0o"]
+[ext_resource type="Texture2D" uid="uid://ck6jq7yviia0u" path="res://Sprites/amigo_player07.png" id="9_wrype"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oulaa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_goi58")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_r2i80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_goi58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mcbu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3ncl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_m7uuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_a0e0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wrype")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8mn0i"]
+size = Vector2(122, 359)
+
+[node name="amigoPlayer" type="Area2D" unique_id=1759834503]
+collision_layer = 4
+collision_mask = 9
+script = ExtResource("1_r2i80")
+horizontal_speed = null
+vertical_speed = null
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=488240014]
+sprite_frames = SubResource("SpriteFrames_oulaa")
+animation = &"walk"
+frame_progress = 0.36850974
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1467994200]
+position = Vector2(0, 14.5)
+shape = SubResource("RectangleShape2D_8mn0i")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1324318833]
+target_position = Vector2(0, 8)
+collision_mask = 18
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=240819272]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
