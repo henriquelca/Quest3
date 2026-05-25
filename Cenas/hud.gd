@@ -1,7 +1,6 @@
 extends CanvasLayer
 
 @onready var lives_label = $VBoxContainer/LivesLabel
-@onready var game_timer = $Game_Timer
 
 
 var time_left = 60

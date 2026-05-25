@@ -19,9 +19,8 @@ const POINTS_LABEL_SCENE = preload("res://Cenas/points_label.tscn")
 @onready var area_2d = $Area2D
 
 @export_group("Locomotion")
-@export var run_speed_damping = 0.5
-@export var speed = 100.0
-@export var jump_velocity = -350
+@export var speed = 500.0
+@export var jump_velocity = -600
 @export_group("")
 
 @export_group("Stomping Enemies")
@@ -42,7 +41,6 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 		
 	if position.y > 100 and not is_dead:
-		die()
 		return
 	
 	if Input.is_action_just_pressed("jump") and is_on_floor():
@@ -68,71 +66,12 @@ func _physics_process(delta):
 	animated_sprite_2d.trigger_animation(velocity, direction, player_mode)
 	move_and_slide()
 
-func _on_area_2d_area_entered(area):
-	if area is Enemy:
-		handle_enemy_collision(area)
-
-func handle_enemy_collision(enemy: Enemy):
-	if enemy == null || is_dead:
-		return
-	
-	var angle_of_collision = rad_to_deg(position.angle_to_point(enemy.position))
-	var is_stomping = angle_of_collision > min_stomp_degree && max_stomp_degree > angle_of_collision
-	
-	if is_instance_of(enemy, Koopa) and (enemy as Koopa).in_a_shell:
-		if (enemy as Koopa).horizontal_speed == 0:
-			(enemy as Koopa).on_stomp(global_position)
-		else:
-			if is_stomping:
-				(enemy as Koopa).horizontal_speed = 0
-				on_enemy_stomped()
-			else:
-				die()
-	else:
-		if is_stomping:
-			enemy.die()
-			on_enemy_stomped()
-			spawn_points_label(enemy)
-		else:
-			die()
-
-func on_enemy_stomped():
-	velocity.y = stomp_y_velocity
 	
 func spawn_points_label(enemy):
 	var points_label = POINTS_LABEL_SCENE.instantiate()
 	points_label.position = enemy.position + Vector2(-20, -20)
 	get_tree().root.add_child(points_label)
 	points_scored.emit(100)
-
-func die():
-	if player_mode == PlayerMode.SMALL:
-		is_dead = true
-		animated_sprite_2d.play("small_death")
-		set_physics_process(false)
-		
-		var death_tween = get_tree().create_tween()
-		death_tween.tween_property(self, "position", position + Vector2(0, -48), .5)
-		death_tween.chain().tween_property(self, "position", position + Vector2(0, 256), 1)
-		death_tween.tween_callback(func (): GameManager.lose_life())
-	else:
-		player_mode = PlayerMode.SMALL
-		
-		var nova_forma_corpo = RectangleShape2D.new()
-		nova_forma_corpo.size = Vector2(16, 16)
-		body_collision_shape_2d.shape = nova_forma_corpo
-		body_collision_shape_2d.position.y = 0
-		
-		var nova_forma_area = RectangleShape2D.new()
-		nova_forma_area.size = Vector2(16, 16)
-		area_collision_shape_2d.shape = nova_forma_area
-		area_collision_shape_2d.position.y = 0
-		
-		animated_sprite_2d.position.y = 0
-		
-		area_2d.set_deferred("monitoring", false)
-		await get_tree().create_timer(1.0).timeout
-		area_2d.set_deferred("monitoring", true)
 
 func crescer():
 	if player_mode == PlayerMode.SMALL:
