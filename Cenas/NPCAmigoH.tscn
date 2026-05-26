@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://5vkouhjyn84r"]
 
-[ext_resource type="Texture2D" uid="uid://dkghukljhdh31" path="res://Sprites/professor_01.png" id="1_t1gw8"]
-[ext_resource type="Texture2D" uid="uid://cs6vbsctdgi0q" path="res://Sprites/professor_02.png" id="2_m28en"]
-[ext_resource type="Texture2D" uid="uid://bk54qxa0rbkgp" path="res://Sprites/professor_03.png" id="3_y8unt"]
-[ext_resource type="Texture2D" uid="uid://cibw3torplxft" path="res://Sprites/professor_04.png" id="4_vjyee"]
-[ext_resource type="Texture2D" uid="uid://db77s6wknai8p" path="res://Sprites/professor_05.png" id="5_vwh7r"]
-[ext_resource type="Texture2D" uid="uid://da5iqvis77r23" path="res://Sprites/professor_07.png" id="6_buuup"]
-[ext_resource type="Texture2D" uid="uid://ccowy4c8uxo05" path="res://Sprites/professor_06.png" id="7_gtrnm"]
+[ext_resource type="Texture2D" uid="uid://cgghe4tv2u6dy" path="res://Sprites/amigo_player01.png" id="1_t1gw8"]
+[ext_resource type="Texture2D" uid="uid://rcayjimdpbur" path="res://Sprites/amigo_player02.png" id="2_m28en"]
+[ext_resource type="Texture2D" uid="uid://dy12c6qy4lfsl" path="res://Sprites/amigo_player03.png" id="3_y8unt"]
+[ext_resource type="Texture2D" uid="uid://dwdyawkxs5wk0" path="res://Sprites/amigo_player4.png" id="4_vjyee"]
+[ext_resource type="Texture2D" uid="uid://cfngmmfglkev7" path="res://Sprites/amigo_player05.png" id="5_vwh7r"]
+[ext_resource type="Texture2D" uid="uid://ck6jq7yviia0u" path="res://Sprites/amigo_player07.png" id="6_buuup"]
+[ext_resource type="Texture2D" uid="uid://whsqorh47ybb" path="res://Sprites/amigo_player06.png" id="7_gtrnm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6o27b"]
 animations = [{
@@ -43,7 +43,7 @@ size = Vector2(73, 174)
 [node name="AmigoH" type="Area2D" unique_id=2068991486]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1649899845]
-scale = Vector2(0.7, 0.7)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_6o27b")
 autoplay = "default"
 flip_h = true
