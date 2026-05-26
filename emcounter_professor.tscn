@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://d0vcd0frcs83v"]
+
+[ext_resource type="PackedScene" uid="uid://derjsg11ftirt" path="res://Cenas/NPCProfessor.tscn" id="1_hu0l1"]
+[ext_resource type="PackedScene" uid="uid://lpupyodntir8" path="res://Cenas/PlayerIDLE.tscn" id="2_0g0g8"]
+
+[sub_resource type="Theme" id="Theme_72odk"]
+
+[node name="EmcounterProfessor" type="Node" unique_id=903372721]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1836459234]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=963696621]
+offset_right = 1148.0
+offset_bottom = 644.0
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1520424146]
+offset_left = 52.0
+offset_top = 32.0
+offset_right = 630.0
+offset_bottom = 250.0
+theme = SubResource("Theme_72odk")
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer" unique_id=126487434]
+layout_mode = 2
+
+[node name="PanelContainer2" type="PanelContainer" parent="CanvasLayer" unique_id=776642295]
+offset_left = 502.0
+offset_top = 396.0
+offset_right = 1122.0
+offset_bottom = 625.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer2" unique_id=865453092]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/PanelContainer2/HBoxContainer" unique_id=1848177120]
+layout_mode = 2
+alignment = 1
+
+[node name="Button3" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer2" unique_id=596457468]
+layout_mode = 2
+text = "teste
+"
+
+[node name="Button4" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer2" unique_id=776846551]
+layout_mode = 2
+text = "teste
+"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer2/HBoxContainer" unique_id=1292870556]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer" unique_id=1545980005]
+layout_mode = 2
+text = "teste
+"
+
+[node name="Button2" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer" unique_id=2128432754]
+layout_mode = 2
+text = "teste
+"
+
+[node name="Professor" parent="CanvasLayer" unique_id=2068991486 instance=ExtResource("1_hu0l1")]
+position = Vector2(916, 140)
+
+[node name="PlayerIDLE" parent="CanvasLayer" unique_id=1809165610 instance=ExtResource("2_0g0g8")]
+position = Vector2(227, 513)
