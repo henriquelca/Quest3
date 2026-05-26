@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://tcjfw5ev3e16" path="res://Cenas/player.tscn" id="7_dg8tt"]
 [ext_resource type="PackedScene" uid="uid://vf3ky3xlsjxq" path="res://Cenas/hud.tscn" id="8_s4u8c"]
 [ext_resource type="PackedScene" uid="uid://b2ejb5kc8fkcw" path="res://Cenas/star.tscn" id="9_oogyn"]
+[ext_resource type="PackedScene" uid="uid://b3es07rswaqq" path="res://Cenas/NPCAmigaM.tscn" id="10_0ls6o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xpmin"]
 texture = ExtResource("1_2aiml")
@@ -62,3 +63,5 @@ position = Vector2(-847, -81)
 
 [node name="Star" parent="." unique_id=1018952607 instance=ExtResource("9_oogyn")]
 position = Vector2(178, -3)
+
+[node name="AmigaM" parent="." unique_id=2068991486 instance=ExtResource("10_0ls6o")]
