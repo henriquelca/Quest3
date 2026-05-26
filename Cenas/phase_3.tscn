@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://tcjfw5ev3e16" path="res://Cenas/player.tscn" id="7_rgsak"]
 [ext_resource type="PackedScene" uid="uid://vf3ky3xlsjxq" path="res://Cenas/hud.tscn" id="8_3ehkt"]
 [ext_resource type="PackedScene" uid="uid://b2ejb5kc8fkcw" path="res://Cenas/star.tscn" id="9_ht2ey"]
+[ext_resource type="PackedScene" uid="uid://c3bwbpww23k03" path="res://Cenas/NPCProfessorEDF.tscn" id="10_4rkeh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xpmin"]
 texture = ExtResource("1_0ts60")
@@ -62,3 +63,6 @@ position = Vector2(-847, -81)
 
 [node name="Star" parent="." unique_id=1018952607 instance=ExtResource("9_ht2ey")]
 position = Vector2(178, -3)
+
+[node name="ProfessorEDF" parent="." unique_id=2068991486 instance=ExtResource("10_4rkeh")]
+position = Vector2(70, 27)

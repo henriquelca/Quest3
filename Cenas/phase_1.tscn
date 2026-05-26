@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dn44nmx1qs2c8" path="res://Sprites/cadeira02.png" id="10_p64x1"]
 [ext_resource type="Texture2D" uid="uid://b27tdswflx327" path="res://Sprites/cadeira01.png" id="11_465li"]
 [ext_resource type="Texture2D" uid="uid://do1h0wij4ov2d" path="res://Sprites/cadeira04.png" id="12_465li"]
+[ext_resource type="PackedScene" uid="uid://derjsg11ftirt" path="res://Cenas/NPCProfessor.tscn" id="13_ol7xd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xpmin"]
 texture = ExtResource("2_mswmi")
@@ -78,8 +79,11 @@ position = Vector2(80, 0)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_p64x1")
 
+[node name="Professor" parent="." unique_id=2068991486 instance=ExtResource("13_ol7xd")]
+position = Vector2(-706, 4)
+
 [node name="Player" parent="." unique_id=1807190910 instance=ExtResource("5_ja1os")]
-position = Vector2(-847, -81)
+position = Vector2(-1138, 5)
 
 [node name="HUD" parent="." unique_id=1413250654 instance=ExtResource("8_du1s2")]
 
