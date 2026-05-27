@@ -1,0 +1,98 @@
+[
+  {
+	"question": "Quantas combinações simples de 2 elementos podem ser formadas a partir de um conjunto com 4 elementos?",
+	"answers": [
+	  {"text": "6", "correct": true},
+	  {"text": "8", "correct": false},
+	  {"text": "12", "correct": false},
+	  {"text": "4", "correct": false}
+	],
+	"background": "backgrounds/math.jpg"
+  },
+  {
+	"question": "Qual é o valor de C(5, 3)?",
+	"answers": [
+	  {"text": "10", "correct": true},
+	  {"text": "15", "correct": false},
+	  {"text": "20", "correct": false},
+	  {"text": "5", "correct": false}
+	],
+	"background": "backgrounds/math.jpg"
+  },
+  {
+	"question": "Em uma combinação simples, a ordem dos elementos importa?",
+	"answers": [
+	  {"text": "Não", "correct": true},
+	  {"text": "Sim", "correct": false}
+	],
+	"background": "backgrounds/math.jpg"
+  },
+  {
+	"question": "Quantas combinações de 3 elementos podem ser feitas com 6 elementos distintos?",
+	"answers": [
+	  {"text": "20", "correct": true},
+	  {"text": "18", "correct": false},
+	  {"text": "36", "correct": false},
+	  {"text": "10", "correct": false}
+	],
+	"background": "backgrounds/math.jpg"
+  },
+  {
+	"question": "Qual fórmula representa combinações simples?",
+	"answers": [
+	  {"text": "C(n, k) = n! / (k!(n-k)!)", "correct": true},
+	  {"text": "n^k", "correct": false},
+	  {"text": "n! / k!", "correct": false},
+	  {"text": "k! / n!", "correct": false}
+	],
+	"background": "backgrounds/math.jpg"
+  },
+  {
+	"question": "Quantas combinações com repetição de 2 elementos podem ser formadas a partir de 3 tipos?",
+	"answers": [
+	  {"text": "6", "correct": true},
+	  {"text": "3", "correct": false},
+	  {"text": "9", "correct": false},
+	  {"text": "4", "correct": false}
+	],
+	"background": "backgrounds/math.jpg"
+  },
+  {
+	"question": "Na combinação com repetição, os elementos podem se repetir?",
+	"answers": [
+	  {"text": "Sim", "correct": true},
+	  {"text": "Não", "correct": false}
+	],
+	"background": "backgrounds/math.jpg"
+  },
+  {
+	"question": "Qual é a fórmula da combinação com repetição?",
+	"answers": [
+	  {"text": "C(n+k-1, k)", "correct": true},
+	  {"text": "C(n, k)", "correct": false},
+	  {"text": "n^k", "correct": false},
+	  {"text": "n!", "correct": false}
+	],
+	"background": "backgrounds/math.jpg"
+  },
+  {
+	"question": "Quantas combinações com repetição de 3 elementos podem ser formadas a partir de 2 tipos?",
+	"answers": [
+	  {"text": "4", "correct": true},
+	  {"text": "6", "correct": false},
+	  {"text": "8", "correct": false},
+	  {"text": "3", "correct": false}
+	],
+	"background": "backgrounds/math.jpg"
+  },
+  {
+	"question": "Qual das opções representa uma combinação simples?",
+	"answers": [
+	  {"text": "Escolher 3 alunos de uma turma sem importar a ordem", "correct": true},
+	  {"text": "Formar senhas com números", "correct": false},
+	  {"text": "Organizar pessoas em fila", "correct": false},
+	  {"text": "Criar códigos com repetição", "correct": false}
+	],
+	"background": "backgrounds/math.jpg"
+  }
+]

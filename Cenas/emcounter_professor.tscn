@@ -1,26 +1,13 @@
 [gd_scene format=3 uid="uid://d0vcd0frcs83v"]
 
 [ext_resource type="PackedScene" uid="uid://derjsg11ftirt" path="res://Cenas/NPCProfessor.tscn" id="1_hu0l1"]
+[ext_resource type="Script" uid="uid://bi8la4ung1erv" path="res://Cenas/emcounter_professor.gd" id="1_v6v26"]
 [ext_resource type="PackedScene" uid="uid://lpupyodntir8" path="res://Cenas/PlayerIDLE.tscn" id="2_0g0g8"]
-
-[sub_resource type="GDScript" id="GDScript_4i8uj"]
-script/source = "extends Node
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-"
 
 [sub_resource type="Theme" id="Theme_72odk"]
 
 [node name="EmcounterProfessor" type="Node" unique_id=903372721]
-script = SubResource("GDScript_4i8uj")
+script = ExtResource("1_v6v26")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1836459234]
 

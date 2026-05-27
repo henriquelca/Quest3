@@ -2,6 +2,7 @@ extends Node
 
 @onready var professor_area = $Professor
 @onready var encounter_canvas_layer = $EmcounterProfessor/CanvasLayer
+@onready var encounter_professor = $EmcounterProfessor
 @onready var player = $Player
 
 func _ready():
@@ -15,6 +16,6 @@ func _process(_delta):
 func _on_professor_area_entered(area):
 	if area.is_in_group("player") or (area.get_parent() and area.get_parent().is_in_group("player")):
 		encounter_canvas_layer.visible = true
+		encounter_professor.start_quiz()
 		professor_area.monitoring = false
 		professor_area.disconnect("area_entered", Callable(self , "_on_professor_area_entered"))
-		
