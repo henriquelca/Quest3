@@ -32,9 +32,11 @@ const POINTS_LABEL_SCENE = preload("res://Cenas/points_label.tscn")
 var player_mode = PlayerMode.SMALL
 var is_dead = false
 var is_transforming = false
+var is_frozen = false
 
 func _physics_process(delta):
-	if is_transforming:
+	if is_transforming or is_frozen:
+		velocity = Vector2.ZERO
 		return
 
 	if not is_on_floor():

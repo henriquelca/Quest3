@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://b27tdswflx327" path="res://Sprites/cadeira01.png" id="11_465li"]
 [ext_resource type="Texture2D" uid="uid://do1h0wij4ov2d" path="res://Sprites/cadeira04.png" id="12_465li"]
 [ext_resource type="PackedScene" uid="uid://derjsg11ftirt" path="res://Cenas/NPCProfessor.tscn" id="13_ol7xd"]
+[ext_resource type="PackedScene" uid="uid://d0vcd0frcs83v" path="res://Cenas/emcounter_professor.tscn" id="14_x8efq"]
+[ext_resource type="Script" uid="uid://phase_1_script_001" path="res://Cenas/phase_1.gd" id="15_a1b2c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xpmin"]
 texture = ExtResource("2_mswmi")
@@ -48,6 +50,7 @@ sources/5 = SubResource("TileSetAtlasSource_7yi6i")
 sources/0 = SubResource("TileSetAtlasSource_xpmin")
 
 [node name="Phase1" type="Node" unique_id=872432415]
+script = ExtResource("15_a1b2c")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=963238689]
 tile_set = SubResource("TileSet_irhh0")
@@ -109,3 +112,5 @@ texture = ExtResource("12_465li")
 position = Vector2(72, 120)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_p64x1")
+
+[node name="EmcounterProfessor" parent="." unique_id=903372721 instance=ExtResource("14_x8efq")]
