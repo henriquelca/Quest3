@@ -56,12 +56,12 @@ position = Vector2(-472, -136)
 scale = Vector2(1.0609684, 1.1995797)
 texture = ExtResource("6_0sosl")
 
-[node name="Player" parent="." unique_id=1807190910 instance=ExtResource("7_y08vc")]
-position = Vector2(-847, -81)
-
 [node name="HUD" parent="." unique_id=1413250654 instance=ExtResource("8_mau74")]
 
 [node name="Star" parent="." unique_id=1018952607 instance=ExtResource("9_832xf")]
 position = Vector2(178, -3)
 
 [node name="AmigoH" parent="." unique_id=2068991486 instance=ExtResource("10_p2gfo")]
+
+[node name="Player" parent="." unique_id=1807190910 instance=ExtResource("7_y08vc")]
+position = Vector2(-847, -81)

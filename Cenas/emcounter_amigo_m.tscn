@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://sxrau3674iuf"]
+
+[ext_resource type="Texture2D" uid="uid://hhsrwimqk8ah" path="res://Sprites/ChatGPT Image 27 de mai. de 2026, 21_19_19.png" id="1_k2ywn"]
+[ext_resource type="PackedScene" uid="uid://lpupyodntir8" path="res://Cenas/PlayerIDLE.tscn" id="2_3n5n1"]
+[ext_resource type="PackedScene" uid="uid://5vkouhjyn84r" path="res://Cenas/NPCAmigoH.tscn" id="3_3n5n1"]
+
+[sub_resource type="Theme" id="Theme_72odk"]
+
+[node name="EmcounterAmigoM" type="Node" unique_id=903372721]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1836459234]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=963696621]
+offset_right = 1148.0
+offset_bottom = 644.0
+
+[node name="ChatGptImage27DeMai_De2026,211919" type="Sprite2D" parent="CanvasLayer" unique_id=2073801870]
+position = Vector2(574, 324)
+scale = Vector2(0.6866029, 0.69075453)
+texture = ExtResource("1_k2ywn")
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1520424146]
+offset_left = 52.0
+offset_top = 32.0
+offset_right = 630.0
+offset_bottom = 250.0
+theme = SubResource("Theme_72odk")
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer" unique_id=126487434]
+layout_mode = 2
+
+[node name="PanelContainer2" type="PanelContainer" parent="CanvasLayer" unique_id=776642295]
+offset_left = 502.0
+offset_top = 396.0
+offset_right = 1122.0
+offset_bottom = 625.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer2" unique_id=865453092]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/PanelContainer2/HBoxContainer" unique_id=1848177120]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Button3" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer2" unique_id=596457468]
+layout_mode = 2
+size_flags_vertical = 3
+text = "teste
+"
+
+[node name="Button4" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer2" unique_id=776846551]
+layout_mode = 2
+size_flags_vertical = 3
+text = "teste
+"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer2/HBoxContainer" unique_id=1292870556]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer" unique_id=1545980005]
+layout_mode = 2
+size_flags_vertical = 3
+text = "teste
+"
+
+[node name="Button2" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer" unique_id=2128432754]
+layout_mode = 2
+size_flags_vertical = 3
+text = "teste
+"
+
+[node name="PlayerIDLE" parent="CanvasLayer" unique_id=1809165610 instance=ExtResource("2_3n5n1")]
+position = Vector2(227, 513)
+
+[node name="AmigoH" parent="CanvasLayer" unique_id=2068991486 instance=ExtResource("3_3n5n1")]
+position = Vector2(977, 199)
