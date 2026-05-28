@@ -65,7 +65,7 @@ texture = ExtResource("6_0ts60")
 position = Vector2(178, -3)
 
 [node name="ProfessorEDF" parent="." unique_id=2068991486 instance=ExtResource("10_4rkeh")]
-position = Vector2(-191, -14)
+position = Vector2(-179, 47)
 
 [node name="Player" parent="." unique_id=1807190910 instance=ExtResource("7_rgsak")]
 position = Vector2(-847, -81)

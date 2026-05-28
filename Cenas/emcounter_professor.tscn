@@ -30,6 +30,7 @@ theme = SubResource("Theme_72odk")
 
 [node name="Label" type="Label" parent="CanvasLayer/PanelContainer" unique_id=126487434]
 layout_mode = 2
+theme_override_font_sizes/font_size = 26
 text = "Pergunta"
 horizontal_alignment = 1
 autowrap_mode = 3
@@ -54,6 +55,7 @@ alignment = 1
 [node name="Button" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer" unique_id=1545980005]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
 text = "teste
 "
 autowrap_mode = 3
@@ -61,6 +63,7 @@ autowrap_mode = 3
 [node name="Button2" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer" unique_id=2128432754]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
 text = "teste
 "
 autowrap_mode = 3
@@ -73,6 +76,7 @@ alignment = 1
 [node name="Button3" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer2" unique_id=596457468]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
 text = "teste
 "
 autowrap_mode = 3
@@ -80,6 +84,7 @@ autowrap_mode = 3
 [node name="Button4" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer2" unique_id=776846551]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
 text = "teste
 "
 autowrap_mode = 3

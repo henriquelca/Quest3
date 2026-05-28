@@ -22,7 +22,10 @@ EncounterManager="*res://Cenas/EncounterManager.gd"
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
+window/stretch/scale=1.7
 
 [global_group]
 

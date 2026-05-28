@@ -91,7 +91,7 @@ position = Vector2(-1138, 5)
 [node name="HUD" parent="." unique_id=1413250654 instance=ExtResource("8_du1s2")]
 
 [node name="Star" parent="." unique_id=1018952607 instance=ExtResource("9_du1s3")]
-position = Vector2(304, -72)
+position = Vector2(301, 24)
 
 [node name="Cadeira01" type="Sprite2D" parent="." unique_id=1924421025]
 position = Vector2(-527, 130)
