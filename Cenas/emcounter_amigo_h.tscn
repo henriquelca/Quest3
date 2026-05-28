@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://sxrau3674iuf"]
 
-[ext_resource type="Texture2D" uid="uid://hhsrwimqk8ah" path="res://Sprites/ChatGPT Image 27 de mai. de 2026, 21_19_19.png" id="1_k2ywn"]
 [ext_resource type="Script" uid="uid://clc67l5fy8075" path="res://Cenas/emcounter_base.gd" id="1_owjin"]
 [ext_resource type="PackedScene" uid="uid://lpupyodntir8" path="res://Cenas/PlayerIDLE.tscn" id="2_3n5n1"]
+[ext_resource type="Texture2D" uid="uid://cwxjyyvew802" path="res://Sprites/ChatGPT Image 28 de mai. de 2026, 15_43_45.png" id="2_owjin"]
 [ext_resource type="PackedScene" uid="uid://5vkouhjyn84r" path="res://Cenas/NPCAmigoH.tscn" id="3_3n5n1"]
+[ext_resource type="Texture2D" uid="uid://5neqb24tj2t3" path="res://Sprites/ChatGPT Image 28 de mai. de 2026, 16_04_44.png" id="3_jxiy6"]
 
 [sub_resource type="Theme" id="Theme_72odk"]
 
@@ -17,10 +18,20 @@ questions_file = "res://Banco/questions_AmigoH.json"
 offset_right = 1148.0
 offset_bottom = 644.0
 
-[node name="ChatGptImage27DeMai_De2026,211919" type="Sprite2D" parent="CanvasLayer" unique_id=2073801870]
-position = Vector2(576.5, 323.99997)
-scale = Vector2(0.6895933, 0.6907545)
-texture = ExtResource("1_k2ywn")
+[node name="ChatGptImage28DeMai_De2026,154345" type="Sprite2D" parent="CanvasLayer" unique_id=1990402932]
+position = Vector2(574.5, 324.5)
+scale = Vector2(0.6895934, 0.696068)
+texture = ExtResource("2_owjin")
+
+[node name="ChatGptImage28DeMai_De2026,160448" type="Sprite2D" parent="CanvasLayer" unique_id=614398169]
+position = Vector2(974, 293)
+scale = Vector2(0.12, 0.16031253)
+texture = ExtResource("3_jxiy6")
+
+[node name="ChatGptImage28DeMai_De2026,160447" type="Sprite2D" parent="CanvasLayer" unique_id=1835532993]
+position = Vector2(254.00003, 541)
+scale = Vector2(0.12, 0.146)
+texture = ExtResource("3_jxiy6")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1520424146]
 offset_left = 52.0
@@ -84,7 +95,7 @@ text = "teste
 autowrap_mode = 3
 
 [node name="PlayerIDLE" parent="CanvasLayer" unique_id=1809165610 instance=ExtResource("2_3n5n1")]
-position = Vector2(227, 513)
+position = Vector2(248, 441)
 
 [node name="AmigoH" parent="CanvasLayer" unique_id=2068991486 instance=ExtResource("3_3n5n1")]
 position = Vector2(977, 199)

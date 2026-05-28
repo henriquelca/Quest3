@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://dft8ekxokolh3"]
 
 [ext_resource type="Script" uid="uid://clc67l5fy8075" path="res://Cenas/emcounter_base.gd" id="1_d4jx2"]
-[ext_resource type="Texture2D" uid="uid://36enahiqoo21" path="res://Sprites/ChatGPT Image 27 de mai. de 2026, 21_09_59.png" id="1_yxot5"]
+[ext_resource type="Texture2D" uid="uid://bph4naikntfau" path="res://Sprites/ChatGPT Image 28 de mai. de 2026, 15_39_01.png" id="2_1tctl"]
 [ext_resource type="PackedScene" uid="uid://lpupyodntir8" path="res://Cenas/PlayerIDLE.tscn" id="2_d4jx2"]
 [ext_resource type="PackedScene" uid="uid://c3bwbpww23k03" path="res://Cenas/NPCProfessorEDF.tscn" id="3_1tctl"]
+[ext_resource type="Texture2D" uid="uid://5neqb24tj2t3" path="res://Sprites/ChatGPT Image 28 de mai. de 2026, 16_04_44.png" id="3_6m1my"]
 
 [sub_resource type="Theme" id="Theme_72odk"]
 
@@ -17,10 +18,20 @@ questions_file = "res://Banco/questions_ProfEDF.json"
 offset_right = 1148.0
 offset_bottom = 644.0
 
-[node name="ChatGptImage27DeMai_De2026,210959" type="Sprite2D" parent="CanvasLayer" unique_id=860594875]
-position = Vector2(576.5, 323.5)
-scale = Vector2(0.68502074, 0.7056927)
-texture = ExtResource("1_yxot5")
+[node name="ChatGptImage28DeMai_De2026,153901" type="Sprite2D" parent="CanvasLayer" unique_id=1281242019]
+position = Vector2(573, 322.5)
+scale = Vector2(0.68087626, 0.7035446)
+texture = ExtResource("2_1tctl")
+
+[node name="ChatGptImage28DeMai_De2026,160446" type="Sprite2D" parent="CanvasLayer" unique_id=1951246515]
+position = Vector2(239, 549)
+scale = Vector2(0.12, 0.129)
+texture = ExtResource("3_6m1my")
+
+[node name="ChatGptImage28DeMai_De2026,160445" type="Sprite2D" parent="CanvasLayer" unique_id=1480911754]
+position = Vector2(907, 343)
+scale = Vector2(0.12, 0.123)
+texture = ExtResource("3_6m1my")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1520424146]
 offset_left = 52.0
@@ -84,7 +95,7 @@ text = "teste
 autowrap_mode = 3
 
 [node name="PlayerIDLE" parent="CanvasLayer" unique_id=1809165610 instance=ExtResource("2_d4jx2")]
-position = Vector2(227, 513)
+position = Vector2(235, 443)
 
 [node name="ProfessorEDF" parent="CanvasLayer" unique_id=2068991486 instance=ExtResource("3_1tctl")]
 position = Vector2(915, 218)

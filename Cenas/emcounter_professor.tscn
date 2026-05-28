@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://clc67l5fy8075" path="res://Cenas/emcounter_base.gd" id="1_7tdj7"]
 [ext_resource type="PackedScene" uid="uid://derjsg11ftirt" path="res://Cenas/NPCProfessor.tscn" id="1_hu0l1"]
 [ext_resource type="PackedScene" uid="uid://lpupyodntir8" path="res://Cenas/PlayerIDLE.tscn" id="2_0g0g8"]
-[ext_resource type="Texture2D" uid="uid://c8ihonnl8sfno" path="res://Sprites/ChatGPT Image 27 de mai. de 2026, 20_24_52.png" id="2_7tdj7"]
+[ext_resource type="Texture2D" uid="uid://bqws1qsvi46j3" path="res://Sprites/ChatGPT Image 28 de mai. de 2026, 15_41_02.png" id="2_7tdj7"]
+[ext_resource type="Texture2D" uid="uid://5neqb24tj2t3" path="res://Sprites/ChatGPT Image 28 de mai. de 2026, 16_04_44.png" id="3_ngxu0"]
 
 [sub_resource type="Theme" id="Theme_72odk"]
 
@@ -16,10 +17,20 @@ script = ExtResource("1_7tdj7")
 offset_right = 1152.0
 offset_bottom = 648.0
 
-[node name="ChatGptImage27DeMai_De2026,202452" type="Sprite2D" parent="CanvasLayer" unique_id=160857456]
-position = Vector2(575, 325.00003)
-scale = Vector2(0.6901914, 0.6928799)
+[node name="ChatGptImage28DeMai_De2026,154102" type="Sprite2D" parent="CanvasLayer" unique_id=1636556739]
+position = Vector2(577, 324.5)
+scale = Vector2(0.69019145, 0.68969184)
 texture = ExtResource("2_7tdj7")
+
+[node name="ChatGptImage28DeMai_De2026,160447" type="Sprite2D" parent="CanvasLayer" unique_id=152600345]
+position = Vector2(252, 567)
+scale = Vector2(0.12, 0.146)
+texture = ExtResource("3_ngxu0")
+
+[node name="ChatGptImage28DeMai_De2026,160446" type="Sprite2D" parent="CanvasLayer" unique_id=1988539773]
+position = Vector2(919, 269)
+scale = Vector2(0.12, 0.129)
+texture = ExtResource("3_ngxu0")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1520424146]
 offset_left = 52.0
@@ -93,4 +104,4 @@ autowrap_mode = 3
 position = Vector2(916, 140)
 
 [node name="PlayerIDLE" parent="CanvasLayer" unique_id=1809165610 instance=ExtResource("2_0g0g8")]
-position = Vector2(227, 513)
+position = Vector2(246, 460)

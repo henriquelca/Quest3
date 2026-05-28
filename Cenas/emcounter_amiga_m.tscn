@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://bqx8bfwn24ilm"]
 
 [ext_resource type="Script" uid="uid://clc67l5fy8075" path="res://Cenas/emcounter_base.gd" id="1_8myke"]
-[ext_resource type="Texture2D" uid="uid://hl8462r6wi7s" path="res://Sprites/ChatGPT Image 27 de mai. de 2026, 20_57_17.png" id="1_howeg"]
 [ext_resource type="PackedScene" uid="uid://b3es07rswaqq" path="res://Cenas/NPCAmigaM.tscn" id="2_8myke"]
+[ext_resource type="Texture2D" uid="uid://drpi78bwouw5l" path="res://Sprites/ChatGPT Image 28 de mai. de 2026, 15_46_09.png" id="2_huewf"]
 [ext_resource type="PackedScene" uid="uid://lpupyodntir8" path="res://Cenas/PlayerIDLE.tscn" id="3_huewf"]
+[ext_resource type="Texture2D" uid="uid://5neqb24tj2t3" path="res://Sprites/ChatGPT Image 28 de mai. de 2026, 16_04_44.png" id="3_t1uop"]
 
 [sub_resource type="Theme" id="Theme_72odk"]
 
@@ -17,16 +18,26 @@ questions_file = "res://Banco/questions_AmigaM.json"
 offset_right = 1148.0
 offset_bottom = 644.0
 
-[node name="ChatGptImage27DeMai_De2026,205717" type="Sprite2D" parent="CanvasLayer" unique_id=1322255440]
-position = Vector2(576.49994, 324)
-scale = Vector2(0.68959326, 0.69075453)
-texture = ExtResource("1_howeg")
+[node name="ChatGptImage28DeMai_De2026,154609" type="Sprite2D" parent="CanvasLayer" unique_id=1826474308]
+position = Vector2(576, 321.00003)
+scale = Vector2(0.6889952, 0.68862903)
+texture = ExtResource("2_huewf")
+
+[node name="ChatGptImage28DeMai_De2026,160445" type="Sprite2D" parent="CanvasLayer" unique_id=1552563879]
+position = Vector2(924, 313)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("3_t1uop")
+
+[node name="ChatGptImage28DeMai_De2026,160444" type="Sprite2D" parent="CanvasLayer" unique_id=476802763]
+position = Vector2(235, 574)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("3_t1uop")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1520424146]
-offset_left = 52.0
-offset_top = 32.0
-offset_right = 630.0
-offset_bottom = 250.0
+offset_left = 38.0
+offset_top = 39.0
+offset_right = 616.0
+offset_bottom = 257.0
 theme = SubResource("Theme_72odk")
 
 [node name="Label" type="Label" parent="CanvasLayer/PanelContainer" unique_id=126487434]
@@ -87,4 +98,4 @@ autowrap_mode = 3
 position = Vector2(928, 230)
 
 [node name="PlayerIDLE" parent="CanvasLayer" unique_id=1809165610 instance=ExtResource("3_huewf")]
-position = Vector2(227, 513)
+position = Vector2(229, 470)
