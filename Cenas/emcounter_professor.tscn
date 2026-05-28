@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://d0vcd0frcs83v"]
 
-[ext_resource type="Texture2D" uid="uid://c8ihonnl8sfno" path="res://Sprites/ChatGPT Image 27 de mai. de 2026, 20_24_52.png" id="1_jje0b"]
-[ext_resource type="PackedScene" uid="uid://lpupyodntir8" path="res://Cenas/PlayerIDLE.tscn" id="2_piblj"]
-[ext_resource type="PackedScene" uid="uid://derjsg11ftirt" path="res://Cenas/NPCProfessor.tscn" id="3_jje0b"]
+[ext_resource type="PackedScene" uid="uid://derjsg11ftirt" path="res://Cenas/NPCProfessor.tscn" id="1_4i8uj"]
+[ext_resource type="Texture2D" uid="uid://c8ihonnl8sfno" path="res://Sprites/ChatGPT Image 27 de mai. de 2026, 20_24_52.png" id="1_v6v26"]
+[ext_resource type="PackedScene" uid="uid://lpupyodntir8" path="res://Cenas/PlayerIDLE.tscn" id="2_v6v26"]
 
 [sub_resource type="Theme" id="Theme_72odk"]
 
@@ -14,10 +14,10 @@
 offset_right = 1148.0
 offset_bottom = 644.0
 
-[node name="ChatGptImage27DeMai_De2026,202452" type="Sprite2D" parent="CanvasLayer" unique_id=1544095249]
-position = Vector2(572.5, 322.49997)
+[node name="ChatGptImage27DeMai_De2026,202452" type="Sprite2D" parent="CanvasLayer" unique_id=292473822]
+position = Vector2(575.5, 321.5)
 scale = Vector2(0.68839717, 0.6896918)
-texture = ExtResource("1_jje0b")
+texture = ExtResource("1_v6v26")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1520424146]
 offset_left = 52.0
@@ -73,8 +73,8 @@ size_flags_vertical = 3
 text = "teste
 "
 
-[node name="PlayerIDLE" parent="CanvasLayer" unique_id=1809165610 instance=ExtResource("2_piblj")]
-position = Vector2(227, 513)
+[node name="Professor" parent="CanvasLayer" unique_id=2068991486 instance=ExtResource("1_4i8uj")]
+position = Vector2(919, 190)
 
-[node name="Professor" parent="CanvasLayer" unique_id=2068991486 instance=ExtResource("3_jje0b")]
-position = Vector2(924, 207)
+[node name="PlayerIDLE" parent="CanvasLayer" unique_id=1809165610 instance=ExtResource("2_v6v26")]
+position = Vector2(227, 513)
