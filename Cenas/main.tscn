@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bappeepikmd7o" path="res://Cenas/menu.gd" id="1_nqmcy"]
 [ext_resource type="Texture2D" uid="uid://db6usmlypnsct" path="res://Sprites/ChatGPT Image 27 de mai. de 2026, 21_26_52.png" id="2_74bqr"]
+[ext_resource type="FontFile" uid="uid://bq05qeh3yq4bp" path="res://Fonts/font.ttf" id="3_ruij7"]
 
 [node name="Menu" type="CanvasLayer" unique_id=223411393]
 script = ExtResource("1_nqmcy")
@@ -15,15 +16,16 @@ scale = Vector2(0.68899524, 0.6950053)
 texture = ExtResource("2_74bqr")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MenuBG" unique_id=1097211888]
-offset_left = -211.51202
-offset_top = -159.10426
-offset_right = 190.48798
-offset_bottom = 156.89574
+offset_left = -138.94287
+offset_top = -164.85956
+offset_right = 263.05713
+offset_bottom = 151.14044
 alignment = 1
 
 [node name="Title" type="Label" parent="MenuBG/VBoxContainer" unique_id=1394915597]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ruij7")
 theme_override_font_sizes/font_size = 40
 text = "DIA DE ESCOLA"
 horizontal_alignment = 1

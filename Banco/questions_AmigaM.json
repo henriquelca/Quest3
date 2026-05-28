@@ -1,182 +1,182 @@
 [
   {
-    "question": "Em qual planeta nós vivemos?",
-    "answers": [
-      { "text": "Terra", "correct": true },
-      { "text": "Marte", "correct": false },
-      { "text": "Júpiter", "correct": false },
-      { "text": "Saturno", "correct": false }
-    ]
+	"question": "Em qual planeta nós vivemos?",
+	"answers": [
+	  { "text": "Terra", "correct": true },
+	  { "text": "Marte", "correct": false },
+	  { "text": "Júpiter", "correct": false },
+	  { "text": "Saturno", "correct": false }
+	]
   },
   {
-    "question": "Qual animal é conhecido como o rei da selva?",
-    "answers": [
-      { "text": "Leão", "correct": true },
-      { "text": "Elefante", "correct": false },
-      { "text": "Tigre", "correct": false },
-      { "text": "Macaco", "correct": false }
-    ]
+	"question": "Qual animal é conhecido como o rei da selva?",
+	"answers": [
+	  { "text": "Leão", "correct": true },
+	  { "text": "Elefante", "correct": false },
+	  { "text": "Tigre", "correct": false },
+	  { "text": "Macaco", "correct": false }
+	]
   },
   {
-    "question": "O que as plantas precisam para crescer?",
-    "answers": [
-      { "text": "Água e luz do sol", "correct": true },
-      { "text": "Chocolate", "correct": false },
-      { "text": "Brinquedos", "correct": false },
-      { "text": "Televisão", "correct": false }
-    ]
+	"question": "O que as plantas precisam para crescer?",
+	"answers": [
+	  { "text": "Água e luz do sol", "correct": true },
+	  { "text": "Chocolate", "correct": false },
+	  { "text": "Brinquedos", "correct": false },
+	  { "text": "Televisão", "correct": false }
+	]
   },
   {
-    "question": "Qual animal vive no mar?",
-    "answers": [
-      { "text": "Golfinho", "correct": true },
-      { "text": "Cavalo", "correct": false },
-      { "text": "Gato", "correct": false },
-      { "text": "Leão", "correct": false }
-    ]
+	"question": "Qual animal vive no mar?",
+	"answers": [
+	  { "text": "Golfinho", "correct": true },
+	  { "text": "Cavalo", "correct": false },
+	  { "text": "Gato", "correct": false },
+	  { "text": "Leão", "correct": false }
+	]
   },
   {
-    "question": "Qual é a estrela que ilumina a Terra durante o dia?",
-    "answers": [
-      { "text": "Sol", "correct": true },
-      { "text": "Lua", "correct": false },
-      { "text": "Marte", "correct": false },
-      { "text": "Vênus", "correct": false }
-    ]
+	"question": "Qual é a estrela que ilumina a Terra durante o dia?",
+	"answers": [
+	  { "text": "Sol", "correct": true },
+	  { "text": "Lua", "correct": false },
+	  { "text": "Marte", "correct": false },
+	  { "text": "Vênus", "correct": false }
+	]
   },
   {
-    "question": "Qual parte do corpo usamos para enxergar?",
-    "answers": [
-      { "text": "Olhos", "correct": true },
-      { "text": "Nariz", "correct": false },
-      { "text": "Orelhas", "correct": false },
-      { "text": "Mãos", "correct": false }
-    ]
+	"question": "Qual parte do corpo usamos para enxergar?",
+	"answers": [
+	  { "text": "Olhos", "correct": true },
+	  { "text": "Nariz", "correct": false },
+	  { "text": "Orelhas", "correct": false },
+	  { "text": "Mãos", "correct": false }
+	]
   },
   {
-    "question": "Qual animal põe ovos?",
-    "answers": [
-      { "text": "Galinha", "correct": true },
-      { "text": "Cachorro", "correct": false },
-      { "text": "Gato", "correct": false },
-      { "text": "Coelho", "correct": false }
-    ]
+	"question": "Qual animal põe ovos?",
+	"answers": [
+	  { "text": "Galinha", "correct": true },
+	  { "text": "Cachorro", "correct": false },
+	  { "text": "Gato", "correct": false },
+	  { "text": "Coelho", "correct": false }
+	]
   },
   {
-    "question": "Qual é a cor das folhas da maioria das plantas?",
-    "answers": [
-      { "text": "Verde", "correct": true },
-      { "text": "Azul", "correct": false },
-      { "text": "Roxo", "correct": false },
-      { "text": "Preto", "correct": false }
-    ]
+	"question": "Qual é a cor das folhas da maioria das plantas?",
+	"answers": [
+	  { "text": "Verde", "correct": true },
+	  { "text": "Azul", "correct": false },
+	  { "text": "Roxo", "correct": false },
+	  { "text": "Preto", "correct": false }
+	]
   },
   {
-    "question": "Qual animal é conhecido por ser muito lento?",
-    "answers": [
-      { "text": "Tartaruga", "correct": true },
-      { "text": "Leopardo", "correct": false },
-      { "text": "Cavalo", "correct": false },
-      { "text": "Coelho", "correct": false }
-    ]
+	"question": "Qual animal é conhecido por ser muito lento?",
+	"answers": [
+	  { "text": "Tartaruga", "correct": true },
+	  { "text": "Leopardo", "correct": false },
+	  { "text": "Cavalo", "correct": false },
+	  { "text": "Coelho", "correct": false }
+	]
   },
   {
-    "question": "O que cai do céu quando está chovendo?",
-    "answers": [
-      { "text": "Água", "correct": true },
-      { "text": "Pedras", "correct": false },
-      { "text": "Folhas", "correct": false },
-      { "text": "Areia", "correct": false }
-    ]
+	"question": "O que cai do céu quando está chovendo?",
+	"answers": [
+	  { "text": "Água", "correct": true },
+	  { "text": "Pedras", "correct": false },
+	  { "text": "Folhas", "correct": false },
+	  { "text": "Areia", "correct": false }
+	]
   },
   {
-    "question": "Qual animal mia?",
-    "answers": [
-      { "text": "Gato", "correct": true },
-      { "text": "Cachorro", "correct": false },
-      { "text": "Vaca", "correct": false },
-      { "text": "Cavalo", "correct": false }
-    ]
+	"question": "Qual animal mia?",
+	"answers": [
+	  { "text": "Gato", "correct": true },
+	  { "text": "Cachorro", "correct": false },
+	  { "text": "Vaca", "correct": false },
+	  { "text": "Cavalo", "correct": false }
+	]
   },
   {
-    "question": "Quantas pernas uma aranha tem?",
-    "answers": [
-      { "text": "8", "correct": true },
-      { "text": "4", "correct": false },
-      { "text": "6", "correct": false },
-      { "text": "10", "correct": false }
-    ]
+	"question": "Quantas pernas uma aranha tem?",
+	"answers": [
+	  { "text": "8", "correct": true },
+	  { "text": "4", "correct": false },
+	  { "text": "6", "correct": false },
+	  { "text": "10", "correct": false }
+	]
   },
   {
-    "question": "Qual animal é o maior do mundo?",
-    "answers": [
-      { "text": "Baleia-azul", "correct": true },
-      { "text": "Elefante", "correct": false },
-      { "text": "Girafa", "correct": false },
-      { "text": "Dinossauro", "correct": false }
-    ]
+	"question": "Qual animal é o maior do mundo?",
+	"answers": [
+	  { "text": "Baleia-azul", "correct": true },
+	  { "text": "Elefante", "correct": false },
+	  { "text": "Girafa", "correct": false },
+	  { "text": "Dinossauro", "correct": false }
+	]
   },
   {
-    "question": "O que usamos para respirar?",
-    "answers": [
-      { "text": "Pulmões", "correct": true },
-      { "text": "Pés", "correct": false },
-      { "text": "Braços", "correct": false },
-      { "text": "Olhos", "correct": false }
-    ]
+	"question": "O que usamos para respirar?",
+	"answers": [
+	  { "text": "Pulmões", "correct": true },
+	  { "text": "Pés", "correct": false },
+	  { "text": "Braços", "correct": false },
+	  { "text": "Olhos", "correct": false }
+	]
   },
   {
-    "question": "Qual animal late?",
-    "answers": [
-      { "text": "Cachorro", "correct": true },
-      { "text": "Gato", "correct": false },
-      { "text": "Peixe", "correct": false },
-      { "text": "Pato", "correct": false }
-    ]
+	"question": "Qual animal late?",
+	"answers": [
+	  { "text": "Cachorro", "correct": true },
+	  { "text": "Gato", "correct": false },
+	  { "text": "Peixe", "correct": false },
+	  { "text": "Pato", "correct": false }
+	]
   },
   {
-    "question": "Qual é o nome do satélite natural da Terra?",
-    "answers": [
-      { "text": "Lua", "correct": true },
-      { "text": "Sol", "correct": false },
-      { "text": "Marte", "correct": false },
-      { "text": "Estrela", "correct": false }
-    ]
+	"question": "Qual é o nome do satélite natural da Terra?",
+	"answers": [
+	  { "text": "Lua", "correct": true },
+	  { "text": "Sol", "correct": false },
+	  { "text": "Marte", "correct": false },
+	  { "text": "Estrela", "correct": false }
+	]
   },
   {
-    "question": "Qual animal tem pescoço muito comprido?",
-    "answers": [
-      { "text": "Girafa", "correct": true },
-      { "text": "Elefante", "correct": false },
-      { "text": "Zebra", "correct": false },
-      { "text": "Macaco", "correct": false }
-    ]
+	"question": "Qual animal tem pescoço muito comprido?",
+	"answers": [
+	  { "text": "Girafa", "correct": true },
+	  { "text": "Elefante", "correct": false },
+	  { "text": "Zebra", "correct": false },
+	  { "text": "Macaco", "correct": false }
+	]
   },
   {
-    "question": "O que as abelhas produzem?",
-    "answers": [
-      { "text": "Mel", "correct": true },
-      { "text": "Leite", "correct": false },
-      { "text": "Chocolate", "correct": false },
-      { "text": "Pão", "correct": false }
-    ]
+	"question": "O que as abelhas produzem?",
+	"answers": [
+	  { "text": "Mel", "correct": true },
+	  { "text": "Leite", "correct": false },
+	  { "text": "Chocolate", "correct": false },
+	  { "text": "Pão", "correct": false }
+	]
   },
   {
-    "question": "Qual parte da planta fica debaixo da terra?",
-    "answers": [
-      { "text": "Raiz", "correct": true },
-      { "text": "Folha", "correct": false },
-      { "text": "Flor", "correct": false },
-      { "text": "Fruta", "correct": false }
-    ]
+	"question": "Qual parte da planta fica debaixo da terra?",
+	"answers": [
+	  { "text": "Raiz", "correct": true },
+	  { "text": "Folha", "correct": false },
+	  { "text": "Flor", "correct": false },
+	  { "text": "Fruta", "correct": false }
+	]
   },
   {
-    "question": "Qual animal vive em rios e lagos e tem escamas?",
-    "answers": [
-      { "text": "Peixe", "correct": true },
-      { "text": "Leão", "correct": false },
-      { "text": "Coelho", "correct": false },
-      { "text": "Cachorro", "correct": false }
-    ]
+	"question": "Qual animal vive em rios e lagos e tem escamas?",
+	"answers": [
+	  { "text": "Peixe", "correct": true },
+	  { "text": "Leão", "correct": false },
+	  { "text": "Coelho", "correct": false },
+	  { "text": "Cachorro", "correct": false }
+	]
   }
 ]

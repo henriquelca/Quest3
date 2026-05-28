@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://4hacj6vm5ub7"]
 
-[ext_resource type="Texture2D" uid="uid://q7i3gdbd6gdp" path="res://Sprites/ChatGPT Image 21 de mai. de 2026, 08_13_55.png" id="1_2aiml"]
-[ext_resource type="Texture2D" uid="uid://bh2i2pbd72n30" path="res://Sprites/GroundBlock.png" id="2_0ls6o"]
-[ext_resource type="Texture2D" uid="uid://8as4lix1a8pr" path="res://Sprites/HardBlock.png" id="3_koo5k"]
-[ext_resource type="Texture2D" uid="uid://dbhkvad8kmca" path="res://Sprites/UndergroundBlock.png" id="4_hm44g"]
-[ext_resource type="Texture2D" uid="uid://dtkrgfs1x5qrr" path="res://Sprites/UndergroundBrick.png" id="5_n0qiy"]
+[ext_resource type="Texture2D" uid="uid://c1nxxryaxxabc" path="res://Sprites/ChatGPT Image 21 de mai. de 2026, 08_13_55.png" id="1_2aiml"]
+[ext_resource type="Texture2D" uid="uid://bivt2gwgv1olp" path="res://Sprites/GroundBlock.png" id="2_0ls6o"]
+[ext_resource type="Texture2D" uid="uid://fc6e7nludqu1" path="res://Sprites/HardBlock.png" id="3_koo5k"]
+[ext_resource type="Texture2D" uid="uid://bhv5v61qrmwlg" path="res://Sprites/UndergroundBlock.png" id="4_hm44g"]
+[ext_resource type="Texture2D" uid="uid://bg062vq1b07je" path="res://Sprites/UndergroundBrick.png" id="5_n0qiy"]
 [ext_resource type="Texture2D" uid="uid://yg5xouh31rf4" path="res://Sprites/corredor.png" id="6_kb870"]
 [ext_resource type="PackedScene" uid="uid://tcjfw5ev3e16" path="res://Cenas/player.tscn" id="7_dg8tt"]
 [ext_resource type="PackedScene" uid="uid://vf3ky3xlsjxq" path="res://Cenas/hud.tscn" id="8_s4u8c"]
@@ -65,7 +65,7 @@ texture = ExtResource("6_kb870")
 position = Vector2(178, -3)
 
 [node name="AmigaM" parent="." unique_id=2068991486 instance=ExtResource("10_0ls6o")]
-position = Vector2(-173, 58)
+position = Vector2(-171, 33)
 
 [node name="Player" parent="." unique_id=1807190910 instance=ExtResource("7_dg8tt")]
 position = Vector2(-847, -81)

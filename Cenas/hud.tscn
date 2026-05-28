@@ -14,7 +14,7 @@ offset_bottom = 80.0
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=1049187451]
 layout_mode = 2
-text = "PONOS:"
+text = "PONTOS:"
 
 [node name="ScoreLabel" type="Label" parent="VBoxContainer" unique_id=1518016257]
 layout_mode = 2

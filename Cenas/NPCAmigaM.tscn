@@ -22,7 +22,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ii2c4"]
-size = Vector2(73, 174)
+size = Vector2(73, 234)
 
 [node name="AmigaM" type="Area2D" unique_id=2068991486]
 
@@ -33,5 +33,5 @@ autoplay = "default"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=462373978]
-position = Vector2(8, 4)
+position = Vector2(-2, -37)
 shape = SubResource("RectangleShape2D_ii2c4")
