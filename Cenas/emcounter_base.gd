@@ -1,6 +1,6 @@
 extends Node
 
-const QUESTIONS_FILE = "res://Banco/questions_Prof.json"
+@export var questions_file: String = "res://Banco/questions_Prof.json"
 const QUIZ_SIZE = 3
 const FEEDBACK_TIME = 1.0
 
@@ -19,6 +19,8 @@ var current_answers = []
 var current_question_index = 0
 var score = 0
 
+signal quiz_finished(score: int)
+
 func _ready():
 	load_questions()
 	connect_buttons()
@@ -26,16 +28,16 @@ func _ready():
 	canvas_layer.visible = false
 
 func load_questions():
-	var file_text = FileAccess.get_file_as_string(QUESTIONS_FILE)
+	var file_text = FileAccess.get_file_as_string(questions_file)
 
 	if file_text.is_empty():
-		push_error("Could not load questions file")
+		push_error("Could not load questions file: " + questions_file)
 		return
 
 	questions = JSON.parse_string(file_text)
 
 	if questions == null:
-		push_error("Invalid JSON in questions file")
+		push_error("Invalid JSON in questions file: " + questions_file)
 		questions = []
 
 func connect_buttons():
@@ -44,11 +46,10 @@ func connect_buttons():
 
 func start_quiz():
 	if questions.is_empty():
-		push_error("No questions loaded")
+		push_error("No questions loaded from: " + questions_file)
 		return
 
 	canvas_layer.visible = true
-
 	score = 0
 
 	current_questions = questions.duplicate()
@@ -66,7 +67,6 @@ func show_question():
 	reset_button_colors()
 
 	var question_data = current_questions[current_question_index]
-
 	question_label.text = question_data.get("question", "Missing Question")
 
 	current_answers = question_data.get("answers", []).duplicate()
@@ -93,7 +93,6 @@ func on_answer_pressed(button):
 		button.modulate = Color.GREEN
 	else:
 		button.modulate = Color.RED
-
 		for i in range(current_answers.size()):
 			if current_answers[i].get("correct", false):
 				answer_buttons[i].modulate = Color.GREEN
@@ -105,9 +104,7 @@ func on_answer_pressed(button):
 
 func end_quiz():
 	canvas_layer.visible = false
-
-	print("Quiz finished")
-	print("Score: ", score, " / ", QUIZ_SIZE)
+	quiz_finished.emit(score)
 
 func hide_buttons():
 	for button in answer_buttons:

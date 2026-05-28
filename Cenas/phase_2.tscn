@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://vf3ky3xlsjxq" path="res://Cenas/hud.tscn" id="8_s4u8c"]
 [ext_resource type="PackedScene" uid="uid://b2ejb5kc8fkcw" path="res://Cenas/star.tscn" id="9_oogyn"]
 [ext_resource type="PackedScene" uid="uid://b3es07rswaqq" path="res://Cenas/NPCAmigaM.tscn" id="10_0ls6o"]
+[ext_resource type="PackedScene" uid="uid://bqx8bfwn24ilm" path="res://Cenas/emcounter_amiga_m.tscn" id="11_ea1m"]
+[ext_resource type="Script" uid="uid://ujt2xn5lt6g2" path="res://Cenas/phase_2.gd" id="12_p2gd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xpmin"]
 texture = ExtResource("1_2aiml")
@@ -45,6 +47,7 @@ sources/5 = SubResource("TileSetAtlasSource_7yi6i")
 sources/0 = SubResource("TileSetAtlasSource_xpmin")
 
 [node name="Phase2" type="Node" unique_id=872432415]
+script = ExtResource("12_p2gd")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=963238689]
 tile_set = SubResource("TileSet_irhh0")
@@ -65,3 +68,5 @@ position = Vector2(178, -3)
 
 [node name="Player" parent="." unique_id=1807190910 instance=ExtResource("7_dg8tt")]
 position = Vector2(-847, -81)
+
+[node name="EmcounterAmigaM" parent="." unique_id=903372721 instance=ExtResource("11_ea1m")]

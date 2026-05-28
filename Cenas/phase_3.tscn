@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://vf3ky3xlsjxq" path="res://Cenas/hud.tscn" id="8_3ehkt"]
 [ext_resource type="PackedScene" uid="uid://b2ejb5kc8fkcw" path="res://Cenas/star.tscn" id="9_ht2ey"]
 [ext_resource type="PackedScene" uid="uid://c3bwbpww23k03" path="res://Cenas/NPCProfessorEDF.tscn" id="10_4rkeh"]
+[ext_resource type="PackedScene" uid="uid://dft8ekxokolh3" path="res://Cenas/emcounter_professor_EDF.tscn" id="11_epf"]
+[ext_resource type="Script" uid="uid://emwihu8vhbgr" path="res://Cenas/phase_3.gd" id="12_p3gd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xpmin"]
 texture = ExtResource("1_0ts60")
@@ -45,6 +47,7 @@ sources/5 = SubResource("TileSetAtlasSource_7yi6i")
 sources/0 = SubResource("TileSetAtlasSource_xpmin")
 
 [node name="Phase3" type="Node" unique_id=872432415]
+script = ExtResource("12_p3gd")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=963238689]
 tile_set = SubResource("TileSet_irhh0")
@@ -66,3 +69,5 @@ position = Vector2(-191, -14)
 
 [node name="Player" parent="." unique_id=1807190910 instance=ExtResource("7_rgsak")]
 position = Vector2(-847, -81)
+
+[node name="EmcounterProfessorEDF" parent="." unique_id=903372721 instance=ExtResource("11_epf")]
