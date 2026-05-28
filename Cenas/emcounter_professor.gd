@@ -2,6 +2,7 @@ extends Node
 
 const QUESTIONS_FILE = "res://questions_Prof.json"
 const QUIZ_SIZE = 3
+const FEEDBACK_TIME = 1.0
 
 @onready var canvas_layer = $CanvasLayer
 @onready var question_label = $CanvasLayer/PanelContainer/Label
@@ -14,7 +15,9 @@ const QUIZ_SIZE = 3
 
 var questions = []
 var current_questions = []
+var current_answers = []
 var current_question_index = 0
+var score = 0
 
 func _ready():
 	load_questions()
@@ -46,6 +49,8 @@ func start_quiz():
 
 	canvas_layer.visible = true
 
+	score = 0
+
 	current_questions = questions.duplicate()
 	current_questions.shuffle()
 	current_questions = current_questions.slice(0, QUIZ_SIZE)
@@ -58,29 +63,61 @@ func show_question():
 		end_quiz()
 		return
 
+	reset_button_colors()
+
 	var question_data = current_questions[current_question_index]
 
 	question_label.text = question_data.get("question", "Missing Question")
 
-	var answers = question_data.get("answers", [])
+	current_answers = question_data.get("answers", []).duplicate()
+	current_answers.shuffle()
 
 	for i in range(answer_buttons.size()):
-		if i < answers.size():
+		if i < current_answers.size():
 			answer_buttons[i].visible = true
 			answer_buttons[i].disabled = false
-			answer_buttons[i].text = answers[i].get("text", "")
+			answer_buttons[i].text = current_answers[i].get("text", "")
 		else:
 			answer_buttons[i].visible = false
 			answer_buttons[i].disabled = true
 
 func on_answer_pressed(button):
+	disable_all_buttons()
+
+	var index = answer_buttons.find(button)
+	var answer_data = current_answers[index]
+	var is_correct = answer_data.get("correct", false)
+
+	if is_correct:
+		score += 1
+		button.modulate = Color.GREEN
+	else:
+		button.modulate = Color.RED
+
+		for i in range(current_answers.size()):
+			if current_answers[i].get("correct", false):
+				answer_buttons[i].modulate = Color.GREEN
+
+	await get_tree().create_timer(FEEDBACK_TIME).timeout
+
 	current_question_index += 1
 	show_question()
 
 func end_quiz():
 	canvas_layer.visible = false
 
+	print("Quiz finished")
+	print("Score: ", score, " / ", QUIZ_SIZE)
+
 func hide_buttons():
 	for button in answer_buttons:
 		button.visible = false
 		button.disabled = true
+
+func disable_all_buttons():
+	for button in answer_buttons:
+		button.disabled = true
+
+func reset_button_colors():
+	for button in answer_buttons:
+		button.modulate = Color.WHITE

@@ -50,12 +50,14 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "teste
 "
+autowrap_mode = 3
 
 [node name="Button2" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer" unique_id=2128432754]
 layout_mode = 2
 size_flags_vertical = 3
 text = "teste
 "
+autowrap_mode = 3
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/PanelContainer2/HBoxContainer" unique_id=1848177120]
 layout_mode = 2
@@ -67,12 +69,14 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "teste
 "
+autowrap_mode = 3
 
 [node name="Button4" type="Button" parent="CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer2" unique_id=776846551]
 layout_mode = 2
 size_flags_vertical = 3
 text = "teste
 "
+autowrap_mode = 3
 
 [node name="Professor" parent="CanvasLayer" unique_id=2068991486 instance=ExtResource("1_hu0l1")]
 position = Vector2(916, 140)
