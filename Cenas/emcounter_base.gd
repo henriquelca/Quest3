@@ -7,6 +7,7 @@ const POINTS_PER_CORRECT = 100
 
 @onready var canvas_layer = $CanvasLayer
 @onready var question_label = $CanvasLayer/PanelContainer/Label
+@onready var music = $AudioStreamPlayer
 @onready var answer_buttons = [
 	$CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer/Button,
 	$CanvasLayer/PanelContainer2/HBoxContainer/VBoxContainer/Button2,
@@ -19,6 +20,8 @@ var current_questions = []
 var current_answers = []
 var current_question_index = 0
 var score = 0
+var musica_escola = preload("res://Musicas/escola.mp3")
+var musica_pergunta = preload("res://Musicas/Battle.mp3")
 
 signal quiz_finished(score: int)
 
@@ -98,6 +101,7 @@ func on_answer_pressed(button):
 func end_quiz():
 	canvas_layer.visible = false
 	quiz_finished.emit(score)
+	get_parent().finalizar_quiz()
 
 func hide_buttons():
 	for button in answer_buttons:
@@ -111,3 +115,9 @@ func disable_all_buttons():
 func reset_button_colors():
 	for button in answer_buttons:
 		button.modulate = Color.WHITE
+func finalizar_quiz():
+	
+	# volta música da escola
+	music.stop()
+	music.stream = musica_escola
+	music.play()

@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://b3es07rswaqq" path="res://Cenas/NPCAmigaM.tscn" id="10_0ls6o"]
 [ext_resource type="PackedScene" uid="uid://bqx8bfwn24ilm" path="res://Cenas/emcounter_amiga_m.tscn" id="11_ea1m"]
 [ext_resource type="Script" uid="uid://ujt2xn5lt6g2" path="res://Cenas/phase_2.gd" id="12_p2gd"]
+[ext_resource type="AudioStream" uid="uid://dpqeq4i56dxgs" path="res://Musicas/escola.mp3" id="13_n0qiy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xpmin"]
 texture = ExtResource("1_2aiml")
@@ -71,3 +72,6 @@ position = Vector2(-171, 33)
 position = Vector2(-847, -81)
 
 [node name="EmcounterAmigaM" parent="." unique_id=903372721 instance=ExtResource("11_ea1m")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1970248359]
+stream = ExtResource("13_n0qiy")

@@ -71,3 +71,5 @@ position = Vector2(-162, 23)
 position = Vector2(-847, -81)
 
 [node name="EmcounterAmigoH" parent="." unique_id=903372721 instance=ExtResource("11_eh1m")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1381059159]

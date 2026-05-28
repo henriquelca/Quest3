@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dpvw8hdf84nc"]
 
-[ext_resource type="Texture2D" uid="uid://bh2i2pbd72n30" path="res://Sprites/GroundBlock.png" id="1_lb8y5"]
-[ext_resource type="Texture2D" uid="uid://8as4lix1a8pr" path="res://Sprites/HardBlock.png" id="2_ja1os"]
-[ext_resource type="Texture2D" uid="uid://q7i3gdbd6gdp" path="res://Sprites/ChatGPT Image 21 de mai. de 2026, 08_13_55.png" id="2_mswmi"]
-[ext_resource type="Texture2D" uid="uid://dbhkvad8kmca" path="res://Sprites/UndergroundBlock.png" id="3_qns0q"]
-[ext_resource type="Texture2D" uid="uid://dtkrgfs1x5qrr" path="res://Sprites/UndergroundBrick.png" id="4_n00j1"]
+[ext_resource type="Texture2D" uid="uid://bivt2gwgv1olp" path="res://Sprites/GroundBlock.png" id="1_lb8y5"]
+[ext_resource type="Texture2D" uid="uid://fc6e7nludqu1" path="res://Sprites/HardBlock.png" id="2_ja1os"]
+[ext_resource type="Texture2D" uid="uid://c1nxxryaxxabc" path="res://Sprites/ChatGPT Image 21 de mai. de 2026, 08_13_55.png" id="2_mswmi"]
+[ext_resource type="Texture2D" uid="uid://bhv5v61qrmwlg" path="res://Sprites/UndergroundBlock.png" id="3_qns0q"]
+[ext_resource type="Texture2D" uid="uid://bg062vq1b07je" path="res://Sprites/UndergroundBrick.png" id="4_n00j1"]
 [ext_resource type="PackedScene" uid="uid://tcjfw5ev3e16" path="res://Cenas/player.tscn" id="5_ja1os"]
 [ext_resource type="Texture2D" uid="uid://bqimceac1qq3w" path="res://Sprites/Sala01.png" id="6_xpmin"]
 [ext_resource type="PackedScene" uid="uid://vf3ky3xlsjxq" path="res://Cenas/hud.tscn" id="8_du1s2"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://derjsg11ftirt" path="res://Cenas/NPCProfessor.tscn" id="13_ol7xd"]
 [ext_resource type="PackedScene" uid="uid://d0vcd0frcs83v" path="res://Cenas/emcounter_professor.tscn" id="14_x8efq"]
 [ext_resource type="Script" uid="uid://dutivk16mj6j1" path="res://Cenas/phase_1.gd" id="15_a1b2c"]
+[ext_resource type="AudioStream" uid="uid://b8kcrkryoewg0" path="res://Musicas/lofcosmos-daydream-drift-lofi-254363.mp3" id="16_bpwtp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xpmin"]
 texture = ExtResource("2_mswmi")
@@ -114,3 +115,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_p64x1")
 
 [node name="EmcounterProfessor" parent="." unique_id=903372721 instance=ExtResource("14_x8efq")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1790539967]
+stream = ExtResource("16_bpwtp")
+autoplay = true

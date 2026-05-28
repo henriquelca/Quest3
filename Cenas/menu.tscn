@@ -1,39 +1,44 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvdqxvmh26y7"]
+[gd_scene format=3 uid="uid://dvdqxvmh26y7"]
 
-[ext_resource type="Script" path="res://Cenas/menu.gd" id="1_nqmcy"]
+[ext_resource type="Script" uid="uid://bappeepikmd7o" path="res://Cenas/menu.gd" id="1_nqmcy"]
+[ext_resource type="AudioStream" uid="uid://dpqeq4i56dxgs" path="res://Musicas/escola.mp3" id="2_u1n12"]
 
-[node name="Menu" type="CanvasLayer"]
+[node name="Menu" type="CanvasLayer" unique_id=1022431491]
 script = ExtResource("1_nqmcy")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchors_fill_parent = true
+[node name="ColorRect" type="ColorRect" parent="." unique_id=39461242]
 color = Color(0.1, 0.1, 0.1, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchors_fill_parent = true
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1518997249]
 alignment = 1
 
-[node name="Title" type="Label" parent="VBoxContainer"]
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=441339810]
 custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
 text = "SUPER MARIO BROS"
 text_overrun_behavior = 3
-add_child_suffix = "enabled"
 
-[node name="Spacer1" type="Control" parent="VBoxContainer"]
+[node name="Spacer1" type="Control" parent="VBoxContainer" unique_id=1045275290]
 custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
 
-[node name="PlayButton" type="Button" parent="VBoxContainer"]
+[node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=1810841109]
 custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
 text = "START GAME"
-add_child_suffix = "enabled"
 
-[node name="Spacer2" type="Control" parent="VBoxContainer"]
+[node name="Spacer2" type="Control" parent="VBoxContainer" unique_id=1007831775]
 custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
 
-[node name="QuitButton" type="Button" parent="VBoxContainer"]
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=15678587]
 custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
 text = "QUIT"
-add_child_suffix = "enabled"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=336645199]
+stream = ExtResource("2_u1n12")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_pressed"]

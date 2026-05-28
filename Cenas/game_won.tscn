@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://cl8h1m3g08nvh"]
 
 [ext_resource type="Script" uid="uid://cbtf51mfcb57n" path="res://Cenas/game_over.gd" id="1_163lr"]
-[ext_resource type="Texture2D" uid="uid://c3bxr8m7il8l5" path="res://Sprites/ChatGPT Image 28 de mai. de 2026, 14_00_53.png" id="2_fgg3m"]
+[ext_resource type="Texture2D" uid="uid://sa2wm3q8u5jf" path="res://Sprites/ChatGPT Image 28 de mai. de 2026, 14_00_53.png" id="2_fgg3m"]
 [ext_resource type="FontFile" uid="uid://bq05qeh3yq4bp" path="res://Fonts/font.ttf" id="2_y2qpn"]
+[ext_resource type="AudioStream" uid="uid://dpqeq4i56dxgs" path="res://Musicas/escola.mp3" id="4_dtvel"]
 
 [node name="GameOver" type="CanvasLayer" unique_id=23481474]
 script = ExtResource("1_163lr")
@@ -36,5 +37,9 @@ text_overrun_behavior = 3
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
 text = "MAIN MENU"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=366532446]
+stream = ExtResource("4_dtvel")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/MenuButton" to="." method="_on_menu_pressed"]
