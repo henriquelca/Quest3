@@ -1,6 +1,6 @@
 extends Node
 
-const QUESTIONS_FILE = "res://questions_Prof.json"
+const QUESTIONS_FILE = "res://Banco/questions_Prof.json"
 const QUIZ_SIZE = 3
 const FEEDBACK_TIME = 1.0
 

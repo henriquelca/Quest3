@@ -1,0 +1,182 @@
+[
+  {
+    "question": "O que devemos fazer antes de clicar em um anúncio na internet?",
+    "answers": [
+      { "text": "Pedir ajuda a um adulto", "correct": true },
+      { "text": "Clicar rápido", "correct": false },
+      { "text": "Compartilhar com desconhecidos", "correct": false },
+      { "text": "Desligar o computador", "correct": false }
+    ]
+  },
+  {
+    "question": "Devemos compartilhar nossa senha com desconhecidos?",
+    "answers": [
+      { "text": "Não", "correct": true },
+      { "text": "Sim", "correct": false },
+      { "text": "Só na escola", "correct": false },
+      { "text": "Só com pessoas da internet", "correct": false }
+    ]
+  },
+  {
+    "question": "O que é mais seguro usar como senha?",
+    "answers": [
+      { "text": "Letras, números e símbolos", "correct": true },
+      { "text": "1234", "correct": false },
+      { "text": "Seu nome", "correct": false },
+      { "text": "abcd", "correct": false }
+    ]
+  },
+  {
+    "question": "O que devemos fazer se um estranho mandar mensagem na internet?",
+    "answers": [
+      { "text": "Avisar um adulto", "correct": true },
+      { "text": "Passar o endereço de casa", "correct": false },
+      { "text": "Mandar fotos pessoais", "correct": false },
+      { "text": "Responder tudo", "correct": false }
+    ]
+  },
+  {
+    "question": "É seguro baixar jogos de sites desconhecidos?",
+    "answers": [
+      { "text": "Não", "correct": true },
+      { "text": "Sim", "correct": false },
+      { "text": "Só à noite", "correct": false },
+      { "text": "Só no celular", "correct": false }
+    ]
+  },
+  {
+    "question": "O que devemos fazer se um site pedir informações pessoais?",
+    "answers": [
+      { "text": "Pedir ajuda a um adulto", "correct": true },
+      { "text": "Responder tudo", "correct": false },
+      { "text": "Compartilhar a senha", "correct": false },
+      { "text": "Ignorar os pais", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual dessas informações NÃO devemos compartilhar na internet?",
+    "answers": [
+      { "text": "Senha", "correct": true },
+      { "text": "Cor favorita", "correct": false },
+      { "text": "Filme favorito", "correct": false },
+      { "text": "Desenho favorito", "correct": false }
+    ]
+  },
+  {
+    "question": "O que devemos fazer ao usar a internet por muito tempo?",
+    "answers": [
+      { "text": "Fazer pausas", "correct": true },
+      { "text": "Ficar sem dormir", "correct": false },
+      { "text": "Ignorar o descanso", "correct": false },
+      { "text": "Usar no escuro", "correct": false }
+    ]
+  },
+  {
+    "question": "Se um anúncio parecer estranho, devemos:",
+    "answers": [
+      { "text": "Evitar clicar", "correct": true },
+      { "text": "Abrir imediatamente", "correct": false },
+      { "text": "Compartilhar com todos", "correct": false },
+      { "text": "Digitar a senha", "correct": false }
+    ]
+  },
+  {
+    "question": "Quem pode ajudar se algo estranho acontecer online?",
+    "answers": [
+      { "text": "Um adulto de confiança", "correct": true },
+      { "text": "Um desconhecido", "correct": false },
+      { "text": "Qualquer pessoa da internet", "correct": false },
+      { "text": "Ninguém", "correct": false }
+    ]
+  },
+  {
+    "question": "É seguro conversar com desconhecidos na internet?",
+    "answers": [
+      { "text": "Não", "correct": true },
+      { "text": "Sim", "correct": false },
+      { "text": "Sempre", "correct": false },
+      { "text": "Só de madrugada", "correct": false }
+    ]
+  },
+  {
+    "question": "O que devemos fazer antes de instalar um aplicativo?",
+    "answers": [
+      { "text": "Verificar se é confiável", "correct": true },
+      { "text": "Instalar sem olhar", "correct": false },
+      { "text": "Passar a senha", "correct": false },
+      { "text": "Desligar a internet", "correct": false }
+    ]
+  },
+  {
+    "question": "Devemos usar a mesma senha em todos os sites?",
+    "answers": [
+      { "text": "Não", "correct": true },
+      { "text": "Sim", "correct": false },
+      { "text": "Só em jogos", "correct": false },
+      { "text": "Só no celular", "correct": false }
+    ]
+  },
+  {
+    "question": "O que devemos fazer se recebermos um link estranho?",
+    "answers": [
+      { "text": "Não clicar", "correct": true },
+      { "text": "Abrir imediatamente", "correct": false },
+      { "text": "Enviar para amigos", "correct": false },
+      { "text": "Digitar dados pessoais", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual dessas atitudes é segura na internet?",
+    "answers": [
+      { "text": "Pedir ajuda a adultos", "correct": true },
+      { "text": "Compartilhar senha", "correct": false },
+      { "text": "Falar com desconhecidos", "correct": false },
+      { "text": "Baixar tudo", "correct": false }
+    ]
+  },
+  {
+    "question": "O antivírus ajuda a:",
+    "answers": [
+      { "text": "Proteger o computador", "correct": true },
+      { "text": "Quebrar a internet", "correct": false },
+      { "text": "Desligar jogos", "correct": false },
+      { "text": "Apagar o teclado", "correct": false }
+    ]
+  },
+  {
+    "question": "Devemos acreditar em tudo que vemos na internet?",
+    "answers": [
+      { "text": "Não", "correct": true },
+      { "text": "Sim", "correct": false },
+      { "text": "Sempre", "correct": false },
+      { "text": "Só em vídeos", "correct": false }
+    ]
+  },
+  {
+    "question": "O que devemos fazer se alguém pedir fotos pessoais?",
+    "answers": [
+      { "text": "Avisar um adulto", "correct": true },
+      { "text": "Mandar imediatamente", "correct": false },
+      { "text": "Postar online", "correct": false },
+      { "text": "Ignorar os pais", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é um bom hábito ao usar a internet?",
+    "answers": [
+      { "text": "Usar com cuidado", "correct": true },
+      { "text": "Clicar em tudo", "correct": false },
+      { "text": "Compartilhar dados pessoais", "correct": false },
+      { "text": "Ficar acordado a noite toda", "correct": false }
+    ]
+  },
+  {
+    "question": "Se um jogo pedir sua senha, você deve:",
+    "answers": [
+      { "text": "Não informar", "correct": true },
+      { "text": "Digitar rapidamente", "correct": false },
+      { "text": "Enviar para amigos", "correct": false },
+      { "text": "Postar em redes sociais", "correct": false }
+    ]
+  }
+]

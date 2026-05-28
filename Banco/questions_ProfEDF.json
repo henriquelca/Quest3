@@ -1,0 +1,182 @@
+[
+  {
+    "question": "Qual exercício é feito correndo de um lugar para outro?",
+    "answers": [
+      { "text": "Corrida", "correct": true },
+      { "text": "Natação", "correct": false },
+      { "text": "Yoga", "correct": false },
+      { "text": "Xadrez", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual esporte é jogado com uma bola e uma cesta?",
+    "answers": [
+      { "text": "Basquete", "correct": true },
+      { "text": "Tênis", "correct": false },
+      { "text": "Vôlei", "correct": false },
+      { "text": "Natação", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual parte do corpo usamos para chutar uma bola?",
+    "answers": [
+      { "text": "Pés", "correct": true },
+      { "text": "Ombros", "correct": false },
+      { "text": "Cotovelos", "correct": false },
+      { "text": "Cabeça", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual esporte é jogado em uma piscina?",
+    "answers": [
+      { "text": "Natação", "correct": true },
+      { "text": "Futebol", "correct": false },
+      { "text": "Basquete", "correct": false },
+      { "text": "Corrida", "correct": false }
+    ]
+  },
+  {
+    "question": "Antes de fazer exercícios, devemos fazer o quê?",
+    "answers": [
+      { "text": "Alongamento", "correct": true },
+      { "text": "Dormir", "correct": false },
+      { "text": "Comer doce", "correct": false },
+      { "text": "Ficar parado", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual esporte é conhecido como o esporte mais popular do Brasil?",
+    "answers": [
+      { "text": "Futebol", "correct": true },
+      { "text": "Golfe", "correct": false },
+      { "text": "Hóquei", "correct": false },
+      { "text": "Esgrima", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual objeto é usado para jogar futebol?",
+    "answers": [
+      { "text": "Bola", "correct": true },
+      { "text": "Raquete", "correct": false },
+      { "text": "Capacete", "correct": false },
+      { "text": "Bastão", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual esporte usa uma rede no meio da quadra?",
+    "answers": [
+      { "text": "Vôlei", "correct": true },
+      { "text": "Basquete", "correct": false },
+      { "text": "Futebol", "correct": false },
+      { "text": "Atletismo", "correct": false }
+    ]
+  },
+  {
+    "question": "O que devemos beber bastante durante atividades físicas?",
+    "answers": [
+      { "text": "Água", "correct": true },
+      { "text": "Refrigerante", "correct": false },
+      { "text": "Café", "correct": false },
+      { "text": "Milkshake", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual esporte usa raquete e bolinha?",
+    "answers": [
+      { "text": "Tênis", "correct": true },
+      { "text": "Futebol", "correct": false },
+      { "text": "Judô", "correct": false },
+      { "text": "Natação", "correct": false }
+    ]
+  },
+  {
+    "question": "Como se chama o exercício de pular corda?",
+    "answers": [
+      { "text": "Pular corda", "correct": true },
+      { "text": "Arremesso", "correct": false },
+      { "text": "Escalada", "correct": false },
+      { "text": "Pedalada", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual esporte é praticado em uma bicicleta?",
+    "answers": [
+      { "text": "Ciclismo", "correct": true },
+      { "text": "Surf", "correct": false },
+      { "text": "Judô", "correct": false },
+      { "text": "Ginástica", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é o nome do profissional que ensina educação física?",
+    "answers": [
+      { "text": "Professor", "correct": true },
+      { "text": "Motorista", "correct": false },
+      { "text": "Dentista", "correct": false },
+      { "text": "Cozinheiro", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual esporte usamos as mãos para quicar a bola?",
+    "answers": [
+      { "text": "Basquete", "correct": true },
+      { "text": "Futebol", "correct": false },
+      { "text": "Atletismo", "correct": false },
+      { "text": "Natação", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual atividade ajuda a melhorar o equilíbrio?",
+    "answers": [
+      { "text": "Andar em linha reta", "correct": true },
+      { "text": "Dormir", "correct": false },
+      { "text": "Assistir TV", "correct": false },
+      { "text": "Comer", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual esporte é jogado com os pés e gols?",
+    "answers": [
+      { "text": "Futebol", "correct": true },
+      { "text": "Tênis", "correct": false },
+      { "text": "Basquete", "correct": false },
+      { "text": "Vôlei", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual atividade física pode ser feita correndo rápido?",
+    "answers": [
+      { "text": "Atletismo", "correct": true },
+      { "text": "Xadrez", "correct": false },
+      { "text": "Pesca", "correct": false },
+      { "text": "Pintura", "correct": false }
+    ]
+  },
+  {
+    "question": "O que usamos para proteger a cabeça em alguns esportes?",
+    "answers": [
+      { "text": "Capacete", "correct": true },
+      { "text": "Sandália", "correct": false },
+      { "text": "Relógio", "correct": false },
+      { "text": "Óculos escuros", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual esporte pode ser jogado na areia?",
+    "answers": [
+      { "text": "Vôlei de praia", "correct": true },
+      { "text": "Hóquei no gelo", "correct": false },
+      { "text": "Patinação no gelo", "correct": false },
+      { "text": "Esqui", "correct": false }
+    ]
+  },
+  {
+    "question": "Fazer exercícios físicos ajuda a manter o corpo como?",
+    "answers": [
+      { "text": "Saudável", "correct": true },
+      { "text": "Cansado o tempo todo", "correct": false },
+      { "text": "Mais lento", "correct": false },
+      { "text": "Doente", "correct": false }
+    ]
+  }
+]

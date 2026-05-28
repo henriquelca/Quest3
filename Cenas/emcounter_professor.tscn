@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://derjsg11ftirt" path="res://Cenas/NPCProfessor.tscn" id="1_hu0l1"]
 [ext_resource type="Script" uid="uid://bi8la4ung1erv" path="res://Cenas/emcounter_professor.gd" id="1_v6v26"]
 [ext_resource type="PackedScene" uid="uid://lpupyodntir8" path="res://Cenas/PlayerIDLE.tscn" id="2_0g0g8"]
+[ext_resource type="Texture2D" uid="uid://c8ihonnl8sfno" path="res://Sprites/ChatGPT Image 27 de mai. de 2026, 20_24_52.png" id="2_7tdj7"]
 
 [sub_resource type="Theme" id="Theme_72odk"]
 
@@ -14,6 +15,11 @@ script = ExtResource("1_v6v26")
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=963696621]
 offset_right = 1152.0
 offset_bottom = 648.0
+
+[node name="ChatGptImage27DeMai_De2026,202452" type="Sprite2D" parent="CanvasLayer" unique_id=160857456]
+position = Vector2(575, 325.00003)
+scale = Vector2(0.6901914, 0.6928799)
+texture = ExtResource("2_7tdj7")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1520424146]
 offset_left = 52.0
