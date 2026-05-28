@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://71wdokojahpi"]
 
 [ext_resource type="Script" uid="uid://bappeepikmd7o" path="res://Cenas/menu.gd" id="1_nqmcy"]
-[ext_resource type="Texture2D" uid="uid://b8o6wyeawq745" path="res://Sprites/MenuBG.jpeg" id="2_74bqr"]
+[ext_resource type="Texture2D" uid="uid://db6usmlypnsct" path="res://Sprites/ChatGPT Image 27 de mai. de 2026, 21_26_52.png" id="2_74bqr"]
 
 [node name="Menu" type="CanvasLayer" unique_id=223411393]
 script = ExtResource("1_nqmcy")
@@ -10,8 +10,8 @@ script = ExtResource("1_nqmcy")
 color = Color(0.1, 0.1, 0.1, 1)
 
 [node name="MenuBG" type="Sprite2D" parent="." unique_id=2134199109]
-position = Vector2(575.625, 325.25)
-scale = Vector2(0.8870656, 0.7935049)
+position = Vector2(578, 330)
+scale = Vector2(0.68899524, 0.6950053)
 texture = ExtResource("2_74bqr")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MenuBG" unique_id=1097211888]
