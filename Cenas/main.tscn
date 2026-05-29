@@ -34,7 +34,7 @@ text_overrun_behavior = 3
 [node name="PlayButton" type="Button" parent="MenuBG/VBoxContainer" unique_id=53522478]
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
-text = "START GAME"
+text = "JOGAR"
 
 [node name="Spacer2" type="Control" parent="MenuBG/VBoxContainer" unique_id=1050778805]
 custom_minimum_size = Vector2(0, 30)
@@ -43,7 +43,7 @@ layout_mode = 2
 [node name="QuitButton" type="Button" parent="MenuBG/VBoxContainer" unique_id=1525454546]
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 2
-text = "QUIT"
+text = "SAIR"
 
 [connection signal="pressed" from="MenuBG/VBoxContainer/PlayButton" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MenuBG/VBoxContainer/QuitButton" to="." method="_on_quit_pressed"]

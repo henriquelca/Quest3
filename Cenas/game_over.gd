@@ -1,8 +1,15 @@
 extends CanvasLayer
+
 @onready var music = $AudioStreamPlayer
+@onready var title_label = $VBoxContainer/Title
+
 var musica_escola = preload("res://Musicas/escola.mp3")
+
+func _ready():
+	if title_label:
+		title_label.text = "PARABÉNS!\nVOCÊ GANHOU!\n\nPONTUAÇÃO FINAL:\n" + str(GameManager.score) + "!!!"
+
 func _on_retry_pressed():
-	# toca música da escola
 	music.stream = musica_escola
 	music.play()
 	GameManager.reset_score()
